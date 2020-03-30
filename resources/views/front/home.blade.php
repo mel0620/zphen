@@ -1,4 +1,147 @@
 @extends("layout")
 @section('content')
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo ducimus non, praesentium debitis vel optio voluptates rem numquam, impedit odit vero alias provident esse maiores saepe, placeat sapiente similique odio ullam dolorem? Dolorem ipsam expedita ex, sint praesentium aut voluptate enim in consequuntur. Est, consequatur. Numquam earum sit incidunt assumenda molestiae minima? Eos est explicabo repellendus quis tempore accusantium vel omnis vero similique modi, maiores aut? Sint nam vitae ex commodi earum neque, voluptatum quos praesentium dolore atque dolor modi a dicta iure id accusamus repellendus distinctio cum debitis. Aperiam tenetur hic voluptate numquam aspernatur cumque, nobis minima fuga excepturi reiciendis dignissimos, sunt nesciunt! Quisquam quibusdam consequuntur, et esse quos expedita aliquam assumenda ipsam, temporibus culpa itaque ratione sit dolorum earum voluptas? Eaque nulla harum quas quidem iure nostrum, dicta quasi dignissimos, mollitia voluptatem, sunt nobis assumenda et laudantium optio eveniet est rem! Sapiente eius repellendus cumque! Vero accusamus eligendi nobis, maiores fugiat fugit illo? Explicabo, nihil culpa animi ipsa amet voluptates temporibus nobis, aliquid accusamus earum atque, optio excepturi! Illum voluptate fugit nam doloremque et animi dolor quasi amet ipsa? At molestias error vitae, cupiditate, expedita quisquam omnis facere eligendi officiis illo velit dolorum neque incidunt est cumque molestiae unde veniam illum, ducimus labore doloremque. Perferendis laboriosam ea officiis tempore debitis sapiente iure nisi ut, quas, nulla, ducimus dignissimos repellendus. In voluptate praesentium corporis itaque nostrum tempore nulla quidem rerum! Iure delectus atque quae mollitia explicabo a facere molestias nesciunt impedit. Praesentium eum dolor minus placeat adipisci commodi molestias ipsa aspernatur at eius odit odio sed culpa illum quam suscipit repudiandae soluta ducimus impedit veritatis, saepe voluptatem voluptate! Dolores cupiditate reiciendis adipisci facere debitis placeat laudantium a quos architecto! Officiis, excepturi reprehenderit. Officia quo velit culpa porro expedita perspiciatis nesciunt tempore consequuntur, rem aspernatur molestias nulla, nobis delectus recusandae autem repudiandae quisquam libero? Odit eum iste quo velit officiis magni fuga iure non adipisci quibusdam quia cumque placeat exercitationem error voluptatum consequatur, officia pariatur facere eius blanditiis eaque saepe possimus? Minus, autem eius! Provident corrupti quasi repudiandae laborum doloribus dolorem natus vero deserunt quidem minima? Saepe ratione delectus alias praesentium fuga iusto iure dolorem minus magnam. Facere nihil inventore asperiores accusamus minus sapiente iusto aperiam sed. Corrupti voluptas sint, ipsum voluptate minima magnam a, placeat officia quis est enim beatae praesentium ad illo necessitatibus ea quisquam. Exercitationem, sunt ducimus. A facere obcaecati illo nostrum nihil necessitatibus dolorem exercitationem? Sed dicta debitis beatae voluptates a? Recusandae, deserunt commodi possimus illo harum voluptatem accusantium et omnis, earum delectus reiciendis numquam repudiandae! Ad architecto, assumenda, veniam delectus non quo harum ipsum minima porro fugiat provident laborum beatae quaerat laudantium sapiente ut, quasi id magnam culpa atque voluptas illum dolores. Error perspiciatis, fuga dignissimos necessitatibus assumenda sunt ullam natus reprehenderit, aliquam nulla praesentium, corrupti fugit atque. Quibusdam aut ea natus error, voluptatibus praesentium consequatur? Hic sint enim quae minus, quas omnis facere reprehenderit? Ad iure rem at. Alias rerum exercitationem architecto sunt, odio dicta eveniet repellendus odit sint accusantium aut assumenda reiciendis ducimus laudantium, tempore quas? Sunt, error! Distinctio temporibus excepturi sequi aut minus qui incidunt accusantium ea suscipit, pariatur mollitia ipsum voluptatum officia architecto quas ipsa nulla illo recusandae et. Nulla, aspernatur ipsum id sunt minus illo voluptatem ut quibusdam beatae officiis sit repudiandae, sequi autem quidem voluptatum harum vero fugiat ea. Natus incidunt neque asperiores veniam eum, fugiat doloribus nisi voluptatem ab sapiente voluptatibus fugit quidem reprehenderit odio sunt vel magni beatae dicta? Ipsum voluptates dolorem aspernatur architecto vero nulla, ratione expedita eligendi deserunt ipsa dignissimos nesciunt unde voluptatibus nihil vitae a. Deleniti dolorum officia, quidem quisquam, quis unde tenetur qui natus quam architecto voluptas! Soluta minus velit adipisci fugit! Aut repudiandae quia rem? Suscipit sunt impedit, autem est, a quae ad illum pariatur officiis vitae labore, corporis dicta fuga quod illo vero repudiandae. Vel magni harum itaque. Veritatis labore iste quasi itaque sunt, reiciendis eveniet officia voluptates voluptatum! Alias dolor nesciunt et officia sint, placeat molestias consectetur voluptatem optio ipsa natus eos, sapiente, at ea aliquam asperiores reiciendis quo quia nulla sit facere earum id nemo? Perspiciatis at saepe earum cumque iure vero incidunt accusantium adipisci. Dolores quaerat officiis at non, praesentium accusantium illo, amet aperiam assumenda, voluptates rem. Eveniet, vel iusto. Ullam, architecto recusandae nobis pariatur consectetur unde aliquam fugiat deleniti hic eum iure nam vitae, enim quasi officia ducimus magnam quo aperiam est error, tenetur ex totam praesentium! Praesentium dolor quasi aspernatur quibusdam error sapiente, eos eaque tenetur saepe exercitationem, voluptatibus magni eius blanditiis consectetur perferendis distinctio recusandae non? Laboriosam error quibusdam, cum esse repudiandae suscipit molestias quae porro numquam quam sed deleniti? Nemo accusamus, rem ea blanditiis quod id aperiam delectus, nobis necessitatibus accusantium, veniam culpa ab! Illo suscipit porro, laborum quo voluptate, vero expedita ut odit qui, explicabo nisi a corrupti! Cupiditate, explicabo possimus? Asperiores nisi velit molestiae, aspernatur cupiditate tempora perferendis voluptate labore dolorem error! Optio dolores ipsa odit? Amet officiis praesentium, voluptates, hic dignissimos sint dolor eaque sapiente beatae neque iure ipsam soluta dolorem iste expedita. Saepe consequatur exercitationem, suscipit porro sint corporis numquam inventore reprehenderit explicabo dolorum ullam ad ex culpa quisquam voluptatem molestias cupiditate vitae aliquam hic maiores, ab nostrum natus enim? Tenetur tempora doloremque magni debitis, autem dolores recusandae, quia minima libero corporis quisquam, eveniet quos reiciendis! Dignissimos qui magnam eveniet quaerat consequuntur voluptatem molestias enim laborum sapiente facere voluptatibus totam est sit accusantium dicta perferendis sequi ab, non nihil, error natus minus quod, soluta nobis. Optio explicabo perferendis at perspiciatis dicta aperiam repellendus id, recusandae tempora eum fuga quasi odit cumque voluptatem est. Molestiae doloremque vero ipsam nihil! Totam porro, ab ipsa magni modi eius. Hic corporis ipsa accusantium vitae dolorum aut facere sunt, magnam mollitia asperiores ducimus veniam beatae, quam ex incidunt assumenda deserunt dolor quis nisi suscipit facilis, earum voluptatum. Magnam eum, laborum maxime, recusandae ea libero praesentium at necessitatibus odio blanditiis consectetur nemo sit dolorum soluta exercitationem saepe corrupti omnis. Laboriosam, delectus nisi eius sunt corrupti autem repudiandae reprehenderit provident facilis alias odit optio, praesentium itaque id?</p>
+    <section class="hero-section">
+        <div class="categories">
+            <div class="categories__label">Categories</div>
+            <ul class="categories__items" id="custom-scroll">
+                <li class="categories__item">
+                    <a href="javascript:">
+                        <span class="text">Construction</span>
+                        <span class="mdi mdi-chevron-right"></span>
+                    </a>
+                </li>
+                <li class="categories__item">
+                    <a href="javascript:">
+                        <span class="text">Automotive</span>
+                        <span class="mdi mdi-chevron-right"></span>
+                    </a>
+                </li>
+                <li class="categories__item">
+                    <a href="javascript:">
+                        <span class="text">Motorcycle</span>
+                        <span class="mdi mdi-chevron-right"></span>
+                    </a>
+                </li>
+                <li class="categories__item">
+                    <a href="javascript:">
+                        <span class="text">Computer</span>
+                        <span class="mdi mdi-chevron-right"></span>
+                    </a>
+                </li>
+                <li class="categories__item">
+                    <a href="javascript:">
+                        <span class="text">Farm & Gardening</span>
+                        <span class="mdi mdi-chevron-right"></span>
+                    </a>
+                </li>
+                <li class="categories__item">
+                    <a href="javascript:">
+                        <span class="text">Marine & Boating</span>
+                        <span class="mdi mdi-chevron-right"></span>
+                    </a>
+                </li>
+                <li class="categories__item">
+                    <a href="javascript:">
+                        <span class="text">Gym and Sport</span>
+                        <span class="mdi mdi-chevron-right"></span>
+                    </a>
+                </li>
+                <li class="categories__item">
+                    <a href="javascript:">
+                        <span class="text">Per Accessories & Food</span>
+                        <span class="mdi mdi-chevron-right"></span>
+                    </a>
+                </li>
+                <li class="categories__item">
+                    <a href="javascript:">
+                        <span class="text">Camping</span>
+                        <span class="mdi mdi-chevron-right"></span>
+                    </a>
+                </li>
+                <li class="categories__item">
+                    <a href="javascript:">
+                        <span class="text">Home</span>
+                        <span class="mdi mdi-chevron-right"></span>
+                    </a>
+                </li>
+                <li class="categories__item">
+                    <a href="javascript:">
+                        <span class="text">Office</span>
+                        <span class="mdi mdi-chevron-right"></span>
+                    </a>
+                </li>
+                <li class="categories__item">
+                    <a href="javascript:">
+                        <span class="text">Others</span>
+                        <span class="mdi mdi-chevron-right"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="product-slider">
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="others">
+            <div class="card-item">
+                <div class="card-item__content">
+
+                </div>
+                <div class="card-item__bottom-action">
+                    <button>Be a vendor</button>
+                </div>
+            </div>
+            <div class="card-item">
+                <div class="card-item__content">
+
+                </div>
+                <div class="card-item__bottom-action">
+                    <button>Sell Used Items</button>
+                </div>
+            </div>
+            <div class="card-item">
+                <div class="card-item__content">
+
+                </div>
+                <div class="card-item__bottom-action">
+                    <button>Shop now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ads-section">
+        @for ($i = 0; $i < 2; $i++)
+            <div class="ads">
+                <span>zphen ads</span>
+            </div>
+        @endfor
+    </section>
+    <section class="accreditation">
+        <div class="label">Available slots for free Accreditation</div>
+        <button class="btn-inquire">INQUIRE</button>
+    </section>
+@endsection
+
+@section('style')
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+@endsection
+
+@section('script')
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+        pagination: {
+            el: '.swiper-pagination',
+        },
+    });
+  </script>
 @endsection

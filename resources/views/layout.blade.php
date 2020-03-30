@@ -4,8 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Zphen</title>
 
+        <link rel="icon" href="assets/favicon.png" type="image/png" sizes="45x45">
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
 
@@ -14,6 +15,8 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="css/app.css">
+
+        @yield('style')
     </head>
     <body>
         <header class="container-fluid">
@@ -38,6 +41,7 @@
                             <a href="javascript:" class="cart__add">
                                 <span class="mdi mdi-cart"></span>
                                 <div class="round-icon">
+                                    {{-- <span class="value">20</span> --}}
                                     <span class="mdi mdi-plus"></span>
                                 </div>
                             </a>
@@ -50,13 +54,33 @@
                         </a>
                     </div>
                 </div>
-                <div class="header-toolbar__right-actions">
+                
+                {{-- VISITOR --}}
+
+                {{-- <div class="header-toolbar__right-actions">
                     <a href="javascript:">Sign up</a>
                     <span class="mx-2 separator">|</span> 
                     <a href="javascript:">
                         <span>Login</span>
                         <span class="mdi mdi-account-circle"></span>
                     </a>
+                </div> --}}
+
+                {{-- LOGGED IN --}}
+
+                <div class="header-toolbar__is-logged-in">
+                    <div class="user">
+                        <a class="user__dropdown" href="javascript:">John Doe <span class="mdi mdi-account-circle"></span></a>
+                        <div class="user__menu">
+                            <ul>
+                                <li><a href="javascript:">My Profile</a></li>
+                                <li><a href="javascript:">My Orders</a></li>
+                                <li><a href="javascript:">My Reviews</a></li>
+                                <li><a href="javascript:">Sell Items</a></li>
+                                <li><a href="javascript:">Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
@@ -145,5 +169,8 @@
                 </div>
             </div>
         </footer>
+
+        @yield('script')
+
     </body>
 </html>

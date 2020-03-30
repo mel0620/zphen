@@ -10933,7 +10933,7 @@ header .header-toolbar__center-actions .search__input {
 }
 
 header .header-toolbar__center-actions .search__input:focus {
-  box-shadow: 0 0 0 2px rgba(255, 179, 23, 0.8);
+  box-shadow: 0 0 0 2px rgba(255, 179, 23, 0.6);
 }
 
 header .header-toolbar__center-actions .search__btn {
@@ -10951,7 +10951,7 @@ header .header-toolbar__center-actions .search__btn span {
 }
 
 header .header-toolbar__center-actions .search__btn:focus {
-  box-shadow: 0 0 0 2px rgba(255, 179, 23, 0.8);
+  box-shadow: 0 0 0 2px rgba(255, 179, 23, 0.6);
 }
 
 header .header-toolbar__center-actions .actions {
@@ -10977,13 +10977,20 @@ header .header-toolbar__center-actions .actions .notif .round-icon,
 header .header-toolbar__center-actions .actions .cart__add .round-icon {
   background-color: #FFB317;
   border-radius: 100%;
-  width: 20px;
+  min-width: 20px;
   height: 20px;
   color: #fff;
   font-size: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 2px;
+}
+
+header .header-toolbar__center-actions .actions .inherits .round-icon .value,
+header .header-toolbar__center-actions .actions .notif .round-icon .value,
+header .header-toolbar__center-actions .actions .cart__add .round-icon .value {
+  font-size: 12px;
 }
 
 header .header-toolbar__center-actions .actions .inherits .round-icon span,
@@ -11033,14 +11040,71 @@ header .header-toolbar__right-actions a {
 
 header .header-toolbar__right-actions a .mdi {
   font-size: 18px;
+  margin-left: 3px;
 }
 
 header .header-toolbar__right-actions a:hover {
   color: #FFB317;
 }
 
+header .header-toolbar__is-logged-in .user {
+  position: relative;
+}
+
+header .header-toolbar__is-logged-in .user__dropdown {
+  text-decoration: none;
+  color: #1c1c1c;
+  transition: 0.3s color ease-in-out;
+}
+
+header .header-toolbar__is-logged-in .user__dropdown .mdi {
+  font-size: 16px;
+}
+
+header .header-toolbar__is-logged-in .user__menu {
+  position: absolute;
+  right: 0;
+  z-index: 50;
+  display: none;
+}
+
+header .header-toolbar__is-logged-in .user__menu ul {
+  list-style-type: none;
+  padding: 0;
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+}
+
+header .header-toolbar__is-logged-in .user__menu ul li {
+  padding: 4px 10px;
+  white-space: nowrap;
+  border-bottom: 1px solid #eaeaea;
+  font-size: 14px;
+  min-width: 120px;
+  cursor: pointer;
+}
+
+header .header-toolbar__is-logged-in .user__menu ul li a {
+  transition: 0.3s color ease-in-out;
+  color: #1c1c1c;
+  text-decoration: none;
+}
+
+header .header-toolbar__is-logged-in .user__menu ul li:hover a {
+  color: #FFB317;
+}
+
+header .header-toolbar__is-logged-in .user:hover .user__dropdown {
+  color: #FFB317;
+}
+
+header .header-toolbar__is-logged-in .user:hover .user__menu {
+  display: block;
+}
+
 .main-content {
   padding-top: 70px;
+  padding-bottom: 50px;
 }
 
 footer {
@@ -11118,7 +11182,183 @@ footer .footer__bottom .copyright {
   font-size: 14px;
 }
 
-p {
-  color: black;
+.hero-section {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 350px;
+  grid-gap: 10px;
+}
+
+.hero-section .categories {
+  overflow: hidden;
+}
+
+.hero-section .categories__label {
+  background: #FFB317;
+  color: #fff;
+  padding: 4px 10px;
+  text-transform: uppercase;
+}
+
+.hero-section .categories__items {
+  list-style-type: none;
+  padding: 0;
+  background-color: #fff;
+  max-height: 320px;
+  overflow: auto;
+}
+
+.hero-section .categories__items .categories__item {
+  border-bottom: 1px solid #eaeaea;
+  padding: 2px 10px;
+  cursor: pointer;
+}
+
+.hero-section .categories__items .categories__item a {
+  text-decoration: none;
+  color: #1c1c1c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-section .categories__items .categories__item a .mdi {
+  opacity: 0;
+  font-size: 18px;
+  margin-right: -7px;
+}
+
+.hero-section .categories__items .categories__item:hover a {
+  color: #FFB317;
+}
+
+.hero-section .categories__items .categories__item:hover a .mdi {
+  opacity: 1;
+}
+
+.hero-section .categories #custom-scroll::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+.hero-section .categories #custom-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.hero-section .categories #custom-scroll::-webkit-scrollbar-thumb {
+  background-color: #FFB317;
+}
+
+.hero-section .product-slider {
+  overflow: hidden;
+}
+
+.hero-section .product-slider .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-section .product-slider .swiper-container .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1c1c1c;
+}
+
+.hero-section .product-slider .swiper-pagination-bullet {
+  background: #000;
+  opacity: 0.2;
+  background-color: transparent;
+  border: 1px solid #000;
+}
+
+.hero-section .product-slider .swiper-pagination-bullet-active {
+  background-color: #FFB317;
+  border: 1px solid #FFB317;
+  opacity: 1;
+}
+
+.hero-section .others {
+  display: grid;
+  grid-row-gap: 10px;
+}
+
+.hero-section .others .card-item {
+  width: 100%;
+  height: calc(100% - 32px);
+}
+
+.hero-section .others .card-item__content {
+  background-color: #fff;
+  height: 100%;
+}
+
+.hero-section .others .card-item__bottom-action {
+  text-align: center;
+}
+
+.hero-section .others .card-item__bottom-action button {
+  border: none;
+  text-decoration: none;
+  color: #fff;
+  background-color: #FFB317;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  width: 100%;
+  outline: none;
+  transition: 0.3s box-shadow ease-in-out;
+}
+
+.hero-section .others .card-item__bottom-action button:focus {
+  box-shadow: 0 0 0 2px rgba(255, 179, 23, 0.5);
+}
+
+.ads-section {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.ads-section .ads {
+  min-height: 80px;
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ads-section .ads span {
+  color: #1c1c1c;
+}
+
+.accreditation {
+  margin-top: 10px;
+  background-color: #fff;
+  min-height: 400px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.accreditation .label {
+  text-align: center;
+  color: #1c1c1c;
+  font-size: 20px;
+}
+
+.accreditation .btn-inquire {
+  background-color: #FFB317;
+  color: #fff;
+  text-align: center;
+  border: 1px solid #FFB317;
+  width: 150px;
+  margin: 0 auto;
 }
 

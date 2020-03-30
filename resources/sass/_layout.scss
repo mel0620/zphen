@@ -47,7 +47,7 @@ header {
                     min-width: 400px;
 
                     &:focus {
-                        box-shadow: 0 0 0 2px rgba($brand, .8);
+                        box-shadow: 0 0 0 2px rgba($brand, .6);
                     }
                 }
 
@@ -65,7 +65,7 @@ header {
                     }
 
                     &:focus {
-                        box-shadow: 0 0 0 2px rgba($brand, .8);
+                        box-shadow: 0 0 0 2px rgba($brand, .6);
                     }
                 }
             }
@@ -87,13 +87,18 @@ header {
                     .round-icon {
                         background-color: $brand;
                         border-radius: 100%;
-                        width: 20px;
+                        min-width: 20px;
                         height: 20px;
                         color: #fff;
                         font-size: 18px;
                         display: flex;
                         align-items: center;
                         justify-content: center;
+                        padding-top: 2px;
+
+                        .value {
+                            font-size: 12px;
+                        }
 
                         span {
                             color: #fff;
@@ -150,10 +155,73 @@ header {
 
                 .mdi {
                     font-size: 18px;
+                    margin-left: 3px;
                 }
 
                 &:hover {
                     color: $brand;
+                }
+            }
+        }
+
+        &__is-logged-in {
+            .user {
+                position: relative;
+
+                &__dropdown {
+                    text-decoration: none;
+                    color: $text-dark;
+                    transition: .3s color ease-in-out;
+
+                    .mdi {
+                        font-size: 16px;
+                    }
+                }
+
+                &__menu {
+                    position: absolute;
+                    right: 0;
+                    z-index: 50;
+                    display: none;
+
+                    ul {
+                        list-style-type: none;
+                        padding: 0;
+                        background-color: #fff;
+                        border: 1px solid #eaeaea;
+
+                        li {
+                            padding: 4px 10px;
+                            white-space: nowrap;
+                            border-bottom: 1px solid #eaeaea;
+                            font-size: 14px;
+                            min-width: 120px;
+                            cursor: pointer;
+                            
+                            a {
+                                transition: .3s color ease-in-out;
+                                color: $text-dark;
+                                text-decoration: none;
+
+                            }
+
+                            &:hover {
+                                a {
+                                    color: $brand;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &:hover {
+                    .user__dropdown {
+                        color: $brand;
+                    }
+
+                    .user__menu {
+                        display: block;
+                    }
                 }
             }
         }
@@ -162,6 +230,7 @@ header {
 
 .main-content {
     padding-top: 70px;
+    padding-bottom: 50px;
 }
 
 footer {
