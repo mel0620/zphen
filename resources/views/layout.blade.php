@@ -19,7 +19,7 @@
         @yield('style')
     </head>
     <body>
-        <header class="container-fluid">
+        <header class="main-header container-fluid">
             <div class="header-toolbar">
                 <div class="header-toolbar__brand">
                     <a href="javascript:">
@@ -45,6 +45,74 @@
                                     <span class="mdi mdi-plus"></span>
                                 </div>
                             </a>
+                            <div class="cart__dropdown-menu">
+                                <div class="cart__dropdown-header">
+                                    <ul class="unstyled">
+                                        <li>
+                                            <input id="allitems" type="checkbox" value="value1">
+                                            <label for="allitems">Select All(0) Items</label>
+                                        </li>
+                                    </ul>
+                                    <button class="cart__dropdown-delete">
+                                        <span class="mdi mdi-trash-can-outline"></span>
+                                    </button>
+                                </div>
+
+                                {{-- IF NO ITEMS --}}
+
+                                {{-- <div class="cart__dropdown-content">
+                                    <div class="no-items">No Items</div>
+                                </div> --}}
+                                
+                                {{-- IF HAS ITEMS --}}
+                                <div class="cart__dropdown-content" id="custom-scroll">
+                                    <div class="product-items">
+                                        @for ($i = 0; $i < 5; $i++)
+                                            <div class="product-item">
+                                                <div class="product-item__check">
+                                                    <ul class="unstyled">
+                                                        <input id="c2" type="checkbox">
+                                                    </ul>
+                                                </div>
+                                                <div class="product-item__preview">
+                                                    <div class="image-holder">
+                                                        <img src="https://static.bhphoto.com/images/images500x500/1484050840_1308819.jpg" alt="">
+                                                    </div>
+                                                    <div class="prod-info">
+                                                        <div class="prod-info__top">
+                                                            <div class="prod-name">Nikon D5600</div>
+                                                            <div class="prod-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, nulla.</div>
+                                                        </div>
+                                                        <div class="prod-info__bottom">
+                                                            <div class="price">
+                                                                <div class="price__current">₱ 5,600.00</div>
+                                                                <div class="price__prev">₱ 24,000.00</div>
+                                                            </div>
+                                                            <div class="counter">
+                                                                <button>
+                                                                    <i class="mdi mdi-plus"></i>
+                                                                </button>
+                                                                <input type="number" value="1">
+                                                                <button>
+                                                                    <i class="mdi mdi-minus"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        @endfor
+                                    </div>
+                                </div>
+                                <div class="cart__dropdown-footer">
+                                    <div class="cart__total">TOTAL: ₱ 28,000.00</div>
+
+                                    {{-- NO ITEMS ON CART --}}
+                                    {{-- <button class="cart__action">ADD ITEMS TO PROCEED</button> --}}
+
+                                    <button class="cart__action">PROCEED TO CHECKOUT</button>
+                                </div>
+                            </div>
                         </div>
                         <a class="notif" href="javascript:">
                             <span class="mdi mdi-bell"></span>

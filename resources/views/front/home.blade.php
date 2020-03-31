@@ -5,73 +5,91 @@
             <div class="categories__label">Categories</div>
             <ul class="categories__items" id="custom-scroll">
                 <li class="categories__item">
-                    <a href="javascript:">
+                    <a class="categories__item-link" href="javascript:">
                         <span class="text">Construction</span>
                         <span class="mdi mdi-chevron-right"></span>
                     </a>
+                    <ul class="sub-category">
+                        @for ($i = 0; $i < 10; $i++)
+                            <li class="sub-category__item">
+                                <a class="sub-categories__item-link" href="javascript:">
+                                    <span class="text">Lorem ipsum</span>
+                                </a>
+                            </li>
+                        @endfor
+                    </ul>
                 </li>
                 <li class="categories__item">
-                    <a href="javascript:">
+                    <a class="categories__item-link" href="javascript:">
                         <span class="text">Automotive</span>
                         <span class="mdi mdi-chevron-right"></span>
                     </a>
+                    {{-- <ul class="sub-category">
+                        @for ($i = 0; $i < 10; $i++)
+                            <li class="sub-category__item">
+                                <a class="sub-categories__item-link" href="javascript:">
+                                    <span class="text">Lorem ipsum</span>
+                                </a>
+                            </li>
+                        @endfor
+                    </ul> --}}
                 </li>
                 <li class="categories__item">
-                    <a href="javascript:">
+                    <a class="categories__item-link" href="javascript:">
                         <span class="text">Motorcycle</span>
                         <span class="mdi mdi-chevron-right"></span>
                     </a>
                 </li>
                 <li class="categories__item">
-                    <a href="javascript:">
+                    <a class="categories__item-link" href="javascript:">
                         <span class="text">Computer</span>
                         <span class="mdi mdi-chevron-right"></span>
                     </a>
                 </li>
                 <li class="categories__item">
-                    <a href="javascript:">
+                    <a class="categories__item-link" href="javascript:">
                         <span class="text">Farm & Gardening</span>
                         <span class="mdi mdi-chevron-right"></span>
                     </a>
                 </li>
                 <li class="categories__item">
-                    <a href="javascript:">
+                    <a class="categories__item-link" href="javascript:">
                         <span class="text">Marine & Boating</span>
                         <span class="mdi mdi-chevron-right"></span>
                     </a>
                 </li>
                 <li class="categories__item">
-                    <a href="javascript:">
+                    <a class="categories__item-link" href="javascript:">
                         <span class="text">Gym and Sport</span>
                         <span class="mdi mdi-chevron-right"></span>
                     </a>
                 </li>
                 <li class="categories__item">
-                    <a href="javascript:">
+                    <a class="categories__item-link" href="javascript:">
                         <span class="text">Per Accessories & Food</span>
                         <span class="mdi mdi-chevron-right"></span>
                     </a>
                 </li>
                 <li class="categories__item">
-                    <a href="javascript:">
+                    <a class="categories__item-link" href="javascript:">
                         <span class="text">Camping</span>
                         <span class="mdi mdi-chevron-right"></span>
                     </a>
                 </li>
                 <li class="categories__item">
-                    <a href="javascript:">
+                    <a class="categories__item-link" href="javascript:">
                         <span class="text">Home</span>
                         <span class="mdi mdi-chevron-right"></span>
                     </a>
                 </li>
                 <li class="categories__item">
-                    <a href="javascript:">
+                    <a class="categories__item-link" href="javascript:">
                         <span class="text">Office</span>
                         <span class="mdi mdi-chevron-right"></span>
                     </a>
                 </li>
                 <li class="categories__item">
-                    <a href="javascript:">
+                    <a class="categories__item-link" href="javascript:">
                         <span class="text">Others</span>
                         <span class="mdi mdi-chevron-right"></span>
                     </a>
@@ -128,6 +146,12 @@
     <section class="accreditation">
         <div class="label">Available slots for free Accreditation</div>
         <button class="btn-inquire">INQUIRE</button>
+    </section>
+    <section class="feature-products">
+        <header class="section-header">
+            <div class="section-title">FEATURED PRODUCTS</div>
+            <a class="section-action" href="javascript:">See all <span class="mdi mdi-chevron-right"></span></a>
+        </header>
     </section>
 @endsection
 

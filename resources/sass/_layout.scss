@@ -3,7 +3,7 @@ html, body {
     position: relative;
 }
 
-header {
+.main-header {
     position: fixed;
     top: 0;
     left: 0;
@@ -43,7 +43,7 @@ header {
                     border: 1px solid $brand;
                     padding: 4px 16px;
                     outline: none;
-                    background-color: $brand-variant;
+                    background-color: $brand-light;
                     transition: .3s box-shadow ease-in-out;
                     min-width: 400px;
 
@@ -58,7 +58,7 @@ header {
                     background-color: $brand;
                     border-top-right-radius: 8px;
                     border-bottom-right-radius: 8px;
-                    transition: .3s box-shadow ease-in-out;
+                    transition: .2s box-shadow ease-in-out;
                     
                     span {
                         color: #fff;
@@ -109,6 +109,7 @@ header {
 
                 .cart {
                     display: flex;
+                    position: relative;
                     
                     &__dropdown {
                         text-decoration: none;
@@ -116,20 +117,212 @@ header {
                         font-weight: 400;
                         display: flex;
                         align-items: center;
-                        transition: .3s color ease-in-out;
+                        // transition: .3s color ease-in-out;
                         margin-right: 5px;
+                        position: relative;
 
                         span {
                             font-size: 20px;
                         }
+                    }
 
-                        &:hover {
-                            color: $brand;
+                    &__dropdown-menu {
+                        position: absolute;
+                        // bottom: 0;
+                        left: 0;
+                        top: 30px;
+                        background-color: #fff;
+                        min-width: 300px;
+                        max-width: 300px;
+                        overflow: hidden;
+                        display: none;
+
+                        .cart__dropdown-header {
+                            background-color: $brand;
+                            padding: 4px 10px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            color: #fff;
+
+                            .unstyled {
+                                padding-top: 6px;
+                            }
+
+                            .cart__dropdown-delete {
+                                all: unset;
+                                background-color: transparent;
+                                font-size: 20px;
+                                cursor: pointer;
+                            }
+                        }
+
+                        .cart__dropdown-content {
+                            border: 1px solid $brand;
+                            border-bottom: 0;
+                            min-height: 120px;
+                            max-height: 400px;
+                            overflow-y: auto;
+                            overflow-x: hidden;
+                            background-color: #fff;
+
+                            .no-items {
+                                text-align: center;
+                                margin-top: 45px;
+                                cursor: text;
+                                color: $text-dark;
+                            }
+
+                            .product-items {
+                                .product-item {
+                                    display: grid;
+                                    grid-template-columns: auto 1fr;
+                                    grid-column-gap: 4px;
+                                    padding: 16px 0 8px;
+                                    border-bottom: 1px solid #ececec;
+                                    margin: 4px 10px;
+
+                                    &__preview {
+                                        display: grid;
+                                        grid-template-columns: auto auto;
+                                        grid-column-gap: 4px;
+
+                                        .image-holder {
+                                            width: 60px;
+                                            height: 60px;
+                                            background-color: #f6f6f6;
+                                            border: 1px solid #d1d1d1;
+                                            // padding: 4px;
+                                            img {
+                                                max-width: 100%;
+                                                height: auto;
+                                                object-fit: contain;
+                                            }
+                                        }
+
+                                        .prod-info {
+                                            overflow:hidden;
+
+                                            &__top {
+                                                .prod-name ,.prod-desc {
+                                                    overflow:hidden;
+                                                    text-overflow: ellipsis;
+                                                    white-space: nowrap;
+                                                    font-size: 12px;
+                                                    color: $text-black;
+                                                    line-height: 16px;
+                                                }
+                                            }
+
+                                            &__bottom {
+                                                display: grid;
+                                                grid-template-columns: 1fr 1fr;
+
+                                                .price {
+                                                    line-height: 16px;
+                                                    &__current {
+                                                        color: $brand-dark;
+                                                        font-size: 14px;
+                                                    }
+
+                                                    &__prev {
+                                                        color: #d1d1d1;
+                                                        font-size: 10px;
+                                                        text-decoration: line-through;
+                                                    }
+                                                }
+
+                                                .counter {
+                                                    display: grid;
+                                                    grid-template-columns: repeat(3, auto);
+                                                    align-items: flex-end;
+                                                    justify-content: flex-end;
+
+                                                    button {
+                                                        width: 20px;
+                                                        height: 20px;
+                                                        display: flex;
+                                                        align-items: center;
+                                                        justify-content: center;
+                                                        border: 1px solid $brand;
+                                                        background-color: $brand-light;
+                                                        outline: none;
+
+                                                        .mdi {
+                                                            color: $text-dark;
+                                                            margin-top: -3px;
+                                                        }
+                                                    }
+
+                                                    input {
+                                                        all: unset;
+                                                        width: 40px;
+                                                        height: 20px;
+                                                        text-align: center;
+                                                        color: $text-dark;
+                                                        font-size: 16px;
+                                                    }
+
+                                                    /* Chrome, Safari, Edge, Opera */
+                                                    input::-webkit-outer-spin-button,
+                                                    input::-webkit-inner-spin-button {
+                                                        -webkit-appearance: none;
+                                                        margin: 0;
+                                                    }
+
+                                                    /* Firefox */
+                                                    input[type=number] {
+                                                        -moz-appearance: textfield;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .cart__dropdown-footer {
+                            .cart__total {
+                                text-align: center;
+                                background-color: $brand-light;
+                                color: $brand-dark;
+                                font-size: 18px;
+                                border: 1px solid $brand;
+                                border-bottom: 0;
+                                cursor: text;
+                            }
+                            .cart__action {
+                                background-color: $brand;
+                                border: 1px solid $brand;
+                                color: #fff;
+                                padding: 4px;
+                                width: 100%;
+                                outline: none;
+                                transition: .3s box-shadow ease-in-out;
+
+                                &:focus {
+                                    box-shadow: 0 0 0 2px rgba($brand, .5);
+                                }
+                            }
                         }
                     }
 
                     &__add {
                         @extend .inherits;
+                    }
+
+                    &:hover {
+                        .cart__dropdown {
+                            color: $brand;
+
+                            .mdi {
+                                transform: rotate(180deg);
+                            }
+                        }
+                        .cart__dropdown-menu {
+                            display: block;
+                        }
                     }
                 }
 
@@ -172,7 +365,7 @@ header {
                 &__dropdown {
                     text-decoration: none;
                     color: $text-dark;
-                    transition: .3s color ease-in-out;
+                    // transition: .2s color ease-in-out;
 
                     .mdi {
                         font-size: 16px;
@@ -200,7 +393,7 @@ header {
                             cursor: pointer;
                             
                             a {
-                                transition: .3s color ease-in-out;
+                                // transition: .2s color ease-in-out;
                                 color: $text-dark;
                                 text-decoration: none;
 
@@ -248,6 +441,7 @@ footer {
                 color: $text-dark;
                 font-weight: 500;
                 margin-bottom: 10px;
+                font-size: 20px;
             }
 
             &__links {
@@ -261,7 +455,7 @@ footer {
                     a {
                         text-decoration: none;
                         color: $text-dark;
-                        transition: .3s color ease-in-out;
+                        // transition: .3s color ease-in-out;
                     }
 
                     &:hover {
@@ -303,6 +497,7 @@ footer {
             color: $text-dark;
             opacity: .8;
             font-size: 14px;
+            font-weight: 300;
         }
     }
 }
