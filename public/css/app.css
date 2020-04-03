@@ -10888,6 +10888,15 @@ a.text-dark:focus {
   list-style-type: none;
 }
 
+.text-link {
+  color: #00B1FF;
+  text-decoration: none !important;
+}
+
+.text-link:hover {
+  color: #00B1FF;
+}
+
 @supports (-webkit-appearance: none) or (-moz-appearance: none) {
   input[type=checkbox],
   input[type=radio] {
@@ -11086,6 +11095,28 @@ a.text-dark:focus {
   box-shadow: 0 0 0 2px rgba(255, 179, 23, 0.6);
 }
 
+.z-input {
+  background-color: #FFFAEF;
+  border: 1px solid #FFB317;
+  outline: none !important;
+  transition: 0.2s box-shadow ease-in-out;
+  display: block;
+  width: 100%;
+  height: calc(1.6em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #495057;
+  background-color: #FFFAEF;
+  background-clip: padding-box;
+  border-radius: 0;
+}
+
+.z-input :focus {
+  box-shadow: 0 0 0 2px rgba(255, 179, 23, 0.6) !important;
+}
+
 .product-wrapper {
   display: grid;
   grid-template-columns: repeat(5, auto);
@@ -11206,7 +11237,7 @@ body {
 }
 
 .main-header .header-toolbar__center-actions .search__input:focus {
-  box-shadow: 0 0 0 2px rgba(255, 179, 23, 0.6);
+  box-shadow: 0 0 0 2px rgba(255, 179, 23, 0.2);
 }
 
 .main-header .header-toolbar__center-actions .search__btn {
@@ -11224,7 +11255,7 @@ body {
 }
 
 .main-header .header-toolbar__center-actions .search__btn:focus {
-  box-shadow: 0 0 0 2px rgba(255, 179, 23, 0.6);
+  box-shadow: 0 0 0 2px rgba(255, 179, 23, 0.2);
 }
 
 .main-header .header-toolbar__center-actions .actions {
@@ -11562,7 +11593,7 @@ body {
 }
 
 .main-content {
-  padding-top: 70px;
+  padding-top: 65px;
   padding-bottom: 50px;
 }
 
@@ -11640,6 +11671,100 @@ footer .footer__bottom .copyright {
   opacity: 0.8;
   font-size: 14px;
   font-weight: 300;
+}
+
+.login-wrapper {
+  margin-top: 10px;
+}
+
+.login-wrapper .header {
+  background-color: #FFFAEF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 32px;
+}
+
+.login-wrapper .header__label {
+  font-size: 18px;
+  color: #000;
+}
+
+.login-wrapper .header__signup {
+  color: #000;
+}
+
+.login-wrapper .content {
+  background-color: #fff;
+  padding: 16px;
+}
+
+.login-wrapper .content .text-black {
+  color: #000;
+}
+
+.login-wrapper .content .separator-text {
+  color: #FFB317;
+  font-weight: 500;
+}
+
+.login-wrapper .content form,
+.login-wrapper .content .login-with {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 32px;
+  max-width: 750px;
+  margin: auto;
+}
+
+.login-wrapper .content form .text-link,
+.login-wrapper .content .login-with .text-link {
+  font-style: italic;
+}
+
+.login-wrapper .content .form-wrapper label {
+  margin-bottom: 0 !important;
+  font-weight: normal;
+}
+
+.login-wrapper .content .login-with {
+  margin-top: 16px;
+}
+
+.login-wrapper .content .login-with .btn-fb,
+.login-wrapper .content .login-with .btn-google {
+  color: #fff;
+  padding: 6px 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-wrapper .content .login-with .btn-fb span,
+.login-wrapper .content .login-with .btn-google span {
+  margin-left: 4px;
+}
+
+.login-wrapper .content .login-with .btn-fb {
+  background-color: #385998;
+  border: 1px solid #385998;
+}
+
+.login-wrapper .content .login-with .btn-fb img {
+  max-width: 100%;
+  height: auto;
+  width: 8px;
+}
+
+.login-wrapper .content .login-with .btn-google {
+  background-color: #D24838;
+  border: 1px solid #D24838;
+}
+
+.login-wrapper .content .login-with .btn-google img {
+  max-width: 100%;
+  height: auto;
+  width: 25px;
 }
 
 .hero-section {

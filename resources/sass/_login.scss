@@ -1,0 +1,91 @@
+.login-wrapper {
+    margin-top: 10px;
+
+    .header {
+        background-color: $brand-light;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 32px;
+
+        &__label {
+            font-size: 18px;
+            color: $text-black;
+        }
+
+        &__signup {
+            color: $text-black;
+        }
+    }
+
+    .content {
+        background-color: #fff;
+        padding: 16px;
+
+        .text-black {
+            color: $text-black;
+        }
+
+        .separator-text {
+            color: $brand;
+            font-weight: 500;
+        }
+
+        form, .login-with {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 32px;
+            max-width: 750px;
+            margin: auto;
+
+            .text-link {
+                font-style: italic;
+            }
+        }
+
+        .form-wrapper {
+            label {
+                margin-bottom: 0 !important;
+                font-weight: normal;
+            }
+        }
+
+        .login-with {
+            margin-top: 16px;
+
+            .btn-fb, .btn-google{
+                color: #fff;
+                padding: 6px 7px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                span {
+                    margin-left: 4px;
+                }
+            }
+
+            .btn-fb {
+                background-color: #385998;
+                border: 1px solid #385998;
+
+                img {
+                    max-width: 100%;
+                    height: auto;
+                    width: 8px;
+                }
+            }
+
+            .btn-google {
+                background-color: #D24838;
+                border: 1px solid #D24838;
+
+                img {
+                    max-width: 100%;
+                    height: auto;
+                    width: 25px;
+                }
+            }
+        }
+    }
+}

@@ -22,7 +22,7 @@
         <header class="main-header container-fluid">
             <div class="header-toolbar">
                 <div class="header-toolbar__brand">
-                    <a href="javascript:">
+                    <a href="/">
                         <img width="150px" src="assets/brand.svg" alt="">
                     </a>
                 </div>
@@ -125,18 +125,18 @@
                 
                 {{-- VISITOR --}}
 
-                {{-- <div class="header-toolbar__right-actions">
+                <div class="header-toolbar__right-actions">
                     <a href="javascript:">Sign up</a>
                     <span class="mx-2 separator">|</span> 
-                    <a href="javascript:">
+                    <a href="/login">
                         <span>Login</span>
                         <span class="mdi mdi-account-circle"></span>
                     </a>
-                </div> --}}
+                </div>
 
                 {{-- LOGGED IN --}}
 
-                <div class="header-toolbar__is-logged-in">
+                {{-- <div class="header-toolbar__is-logged-in">
                     <div class="user">
                         <a class="user__dropdown" href="javascript:">John Doe <span class="mdi mdi-account-circle"></span></a>
                         <div class="user__menu">
@@ -149,7 +149,7 @@
                             </ul>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </header>
         <main class="main-content container">

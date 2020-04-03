@@ -4,6 +4,15 @@
     list-style-type: none;
 }
 
+.text-link {
+    color: #00B1FF;
+    text-decoration: none !important;
+
+    &:hover {
+        color: #00B1FF;
+    }
+}
+
 // CUSTOM CHECKBOX
 @supports (-webkit-appearance: none) or (-moz-appearance: none) {
     input[type="checkbox"],
@@ -144,7 +153,6 @@
 }
 // END CUSTOM CHECKBOX
 
-
 // CUSTOM SCROLL
 #custom-scroll::-webkit-scrollbar-track {
     // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
@@ -162,7 +170,6 @@
 }
 // END CUSTOM SCROLL
 
-
 // CUSTOM BUTTON
 .z-btn-filled {
     border: 1px solid $brand;
@@ -178,7 +185,6 @@
         box-shadow: 0 0 0 2px rgba($brand, .6);
     }
 }
-
 .z-btn-outline {
     border: 1px solid $brand;
     background-color: $brand-light;
@@ -192,6 +198,31 @@
     }
 } 
 // END CUSTOM BUTTON
+
+// CUSTOM INPUT
+.z-input {
+    background-color: $brand-light;
+    border: 1px solid $brand;
+    outline: none !important;
+    transition: .2s box-shadow ease-in-out;
+    display: block;
+    width: 100%;
+    height: calc(1.6em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #495057;
+    background-color: $brand-light;
+    background-clip: padding-box;
+    border-radius: 0;
+
+    :focus {
+        box-shadow: 0 0 0 2px rgba($brand, .6) !important;
+        // box-shadow: 0 0 0 0.2rem rgba(52, 144, 220, 0.25);
+    }
+}
+// END CUSTOM INPUT
 
 // PRODUCT
 .product-wrapper {
@@ -262,3 +293,4 @@
         }
     }
 }
+// END PRODUCT
