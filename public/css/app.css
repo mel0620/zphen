@@ -11058,6 +11058,102 @@ a.text-dark:focus {
   background-color: #FFB317;
 }
 
+.z-btn-filled {
+  border: 1px solid #FFB317;
+  background-color: #FFB317;
+  outline: none !important;
+  transition: 0.2s box-shadow ease-in-out;
+  color: #fff;
+  font-weight: 400;
+  min-width: 250px;
+  min-height: 40px;
+}
+
+.z-btn-filled:focus {
+  box-shadow: 0 0 0 2px rgba(255, 179, 23, 0.6);
+}
+
+.z-btn-outline {
+  border: 1px solid #FFB317;
+  background-color: #FFFAEF;
+  outline: none !important;
+  transition: 0.2s box-shadow ease-in-out;
+  color: #FFB317;
+  font-weight: 500;
+}
+
+.z-btn-outline:focus {
+  box-shadow: 0 0 0 2px rgba(255, 179, 23, 0.6);
+}
+
+.product-wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+  margin-top: 16px;
+}
+
+.product-wrapper .product-item {
+  background-color: #fff;
+}
+
+.product-wrapper .product-item__top {
+  border-bottom: 2px solid #f8fafc;
+}
+
+.product-wrapper .product-item__top .product-item__image {
+  max-width: 250px;
+  max-height: 250px;
+  padding: 5px;
+}
+
+.product-wrapper .product-item__top .product-item__image img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.product-wrapper .product-item__bottom {
+  padding: 10px;
+}
+
+.product-wrapper .product-item__bottom .product-item__info {
+  line-height: 16px;
+  overflow: hidden;
+}
+
+.product-wrapper .product-item__bottom .product-item__info .product-item__name,
+.product-wrapper .product-item__bottom .product-item__info .product-item__desc {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #000;
+  max-width: 190px;
+}
+
+.product-wrapper .product-item__bottom .product-item__order {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 8px;
+}
+
+.product-wrapper .product-item__bottom .product-item__order .product-item__price .product-item__current {
+  color: #FF6600;
+  font-size: 18px;
+}
+
+.product-wrapper .product-item__bottom .product-item__order .product-item__price .product-item__prev {
+  color: #000;
+  opacity: 0.4;
+  font-size: 12px;
+  text-decoration: line-through;
+}
+
+.product-wrapper .product-item__bottom .product-item__order .product-item__action {
+  justify-self: flex-end;
+}
+
 html,
 body {
   background-color: #F6F6F6;
@@ -11595,7 +11691,15 @@ footer .footer__bottom .copyright {
   margin-right: -7px;
 }
 
-.hero-section .categories__items .categories__item .sub-category {
+.hero-section .categories__items .categories__item:hover .categories__item-link {
+  color: #FFB317;
+}
+
+.hero-section .categories__items .categories__item:hover .categories__item-link .mdi {
+  opacity: 1;
+}
+
+.hero-section .categories .sub-category {
   position: absolute;
   top: 0;
   right: -200px;
@@ -11607,22 +11711,10 @@ footer .footer__bottom .copyright {
   display: none;
 }
 
-.hero-section .categories__items .categories__item .sub-category__item {
+.hero-section .categories .sub-category__item {
   border-bottom: 1px solid #eaeaea;
   padding: 2px 10px;
   cursor: pointer;
-}
-
-.hero-section .categories__items .categories__item:hover .categories__item-link {
-  color: #FFB317;
-}
-
-.hero-section .categories__items .categories__item:hover .categories__item-link .mdi {
-  opacity: 1;
-}
-
-.hero-section .categories__items .categories__item:hover .sub-category {
-  display: block;
 }
 
 .hero-section .product-slider {
@@ -11762,7 +11854,28 @@ footer .footer__bottom .copyright {
   font-size: 16px;
 }
 
-.feature-products {
+.feature-products,
+.most-popular {
   margin-top: 32px;
+  overflow: hidden;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin-top: 32px;
+}
+
+.grid__item {
+  background-color: #fff;
+  min-height: 300px;
+}
+
+.grid__item .label {
+  text-align: center;
+  color: #1c1c1c;
+  font-size: 18px;
+  padding: 16px;
 }
 

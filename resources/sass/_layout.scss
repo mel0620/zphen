@@ -221,7 +221,7 @@ html, body {
                                                 .price {
                                                     line-height: 16px;
                                                     &__current {
-                                                        color: $brand-dark;
+                                                        color: $brand-strong;
                                                         font-size: 14px;
                                                     }
 
@@ -286,7 +286,7 @@ html, body {
                             .cart__total {
                                 text-align: center;
                                 background-color: $brand-light;
-                                color: $brand-dark;
+                                color: $brand-strong;
                                 font-size: 18px;
                                 border: 1px solid $brand;
                                 border-bottom: 0;
