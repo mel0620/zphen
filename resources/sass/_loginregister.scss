@@ -1,0 +1,230 @@
+.login-wrapper,
+.signup-wrapper {
+    margin-top: 10px;
+
+    .content-header {
+        background-color: $brand-light;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 32px;
+
+        &__label {
+            font-size: 18px;
+            color: $black;
+        }
+
+        &__signup {
+            color: $black;
+        }
+    }
+
+    .content-body {
+        background-color: #fff;
+        padding: 25px 16px 50px;
+
+        .text-black {
+            color: $black;
+        }
+
+        .separator-text {
+            color: $brand;
+            font-weight: 500;
+        }
+
+        form,
+        .login-with {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 32px;
+            max-width: 750px;
+            margin: auto;
+        }
+
+        .form-wrapper {
+            label {
+                margin-bottom: 0 !important;
+                font-weight: normal;
+            }
+
+            .form-group-custom {
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-gap: 10px;
+
+                .date-group {
+                    display: grid;
+                    grid-template-columns: auto auto auto;
+
+                    .z-input:nth-child(2), .z-input:last-child {
+                        border-left: 0px;
+                    }
+                }
+            }
+        }
+
+        .login-with {
+            margin-top: 16px;
+
+            .btn-fb,
+            .btn-google {
+                color: #fff;
+                padding: 6px 7px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: .2s box-shadow ease-in-out;
+                outline: none;
+
+                span {
+                    margin-left: 4px;
+                }
+            }
+
+            .btn-fb {
+                background-color: $fb;
+                border: 1px solid $fb;
+
+                img {
+                    max-width: 100%;
+                    height: auto;
+                    width: 8px;
+                }
+
+                &:focus {
+                    box-shadow: 0 0 0 2px rgba($fb, .2);
+                }
+            }
+
+            .btn-google {
+                background-color: $google;
+                border: 1px solid $google;
+
+                img {
+                    max-width: 100%;
+                    height: auto;
+                    width: 25px;
+                }
+
+                &:focus {
+                    box-shadow: 0 0 0 2px rgba($google, .2);
+                }
+            }
+        }
+    }
+}
+
+// TABS
+.signup-wrapper {
+    //mixins
+    @mixin transition-mix ($property: all, $duration: 0.2s, $timing: linear, $delay: 0s) {
+        transition-property: $property;
+        transition-duration: $duration;
+        transition-timing-function: $timing;
+        transition-delay: $delay;
+    }
+
+    @mixin position-absolute ($top: null, $left: null, $right: null, $bottom: null) {
+        position: absolute;
+        top: $top;
+        left: $left;
+        right: $right;
+        bottom: $bottom;
+    }
+
+    .content-body {
+        //tabs styles
+        $tabs-padding: 0;
+
+        .tabs {
+            position: relative;
+            padding: $tabs-padding;
+            height: 100%;
+            overflow: hidden;
+            max-width: 750px;
+            margin: auto;
+        }
+
+        //tabs nav styles
+        $theme-accent-color: $brand;
+
+        .tabs__nav {
+            position: relative;
+        }
+
+        //nav decoration is appended by js
+        .tabs__nav-decoration {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            transition: width 0.2s linear 0s, transform 0.2s ease-out 0s;
+            background-color: $theme-accent-color;
+            border-radius: 0;
+            z-index: 1;
+        }
+
+        .tabs__nav-list {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            z-index: 5;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .tabs__nav-item {
+            @include transition-mix($delay: 0s);
+            color: $brand;
+            padding: 8px;
+            cursor: pointer;
+            width: 100%;
+            text-align: center;
+            border: 1px solid $brand;
+            background-color: $brand-light;
+
+            &::after {
+                @include transition-mix($delay: 0.05s);
+            }
+
+            //active styles
+            &.js-active {
+                @include transition-mix($delay: 0.05s);
+                color: #fff;
+                position: relative;
+                background-color: transparent;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -21px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    border-top: solid 20px $brand;
+                    border-left: solid 20px transparent;
+                    border-right: solid 20px transparent;
+                }
+            }
+        }
+
+        .tabs__panels {
+            position: relative;
+            margin-top: 30px;
+        }
+
+        .tabs__panel {
+            // @include position-absolute($top: 0, $left: 0);
+            transition: none;
+            width: 100%;
+            display: none;
+
+            //active panel styles
+            &.js-active {
+                transition: all 0.25s linear 0s;
+                display: block;
+            }
+        }
+    }
+}

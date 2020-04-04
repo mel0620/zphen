@@ -126,7 +126,7 @@
                 {{-- VISITOR --}}
 
                 <div class="header-toolbar__right-actions">
-                    <a href="javascript:">Sign up</a>
+                    <a href="/register">Sign up</a>
                     <span class="mx-2 separator">|</span> 
                     <a href="/login">
                         <span>Login</span>

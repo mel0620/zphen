@@ -8,6 +8,10 @@
     color: #00B1FF;
     text-decoration: none !important;
 
+    &.italic {
+        font-style: italic;
+    }
+
     &:hover {
         color: #00B1FF;
     }
@@ -182,7 +186,7 @@
     min-height: 40px;
 
     &:focus {
-        box-shadow: 0 0 0 2px rgba($brand, .6);
+        box-shadow: 0 0 0 2px rgba($brand, .2);
     }
 }
 .z-btn-outline {
@@ -194,7 +198,7 @@
     font-weight: 500;
 
     &:focus {
-        box-shadow: 0 0 0 2px rgba($brand, .6);
+        box-shadow: 0 0 0 2px rgba($brand, .2);
     }
 } 
 // END CUSTOM BUTTON
@@ -218,7 +222,7 @@
     border-radius: 0;
 
     :focus {
-        box-shadow: 0 0 0 2px rgba($brand, .6) !important;
+        box-shadow: 0 0 0 2px rgba($brand, .2) !important;
         // box-shadow: 0 0 0 0.2rem rgba(52, 144, 220, 0.25);
     }
 }
@@ -262,7 +266,7 @@
                     overflow: hidden;
                     text-overflow: ellipsis;
                     white-space: nowrap;
-                    color: $text-black;
+                    color: $black;
                     max-width: 190px;
                 }
             }
@@ -279,7 +283,7 @@
                         font-size: 18px;
                     }
                     .product-item__prev {
-                        color: $text-black;
+                        color: $black;
                         opacity: .4;
                         font-size: 12px;
                         text-decoration: line-through;

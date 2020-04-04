@@ -10,13 +10,13 @@
     </section>
     <!-- END ADS SECTION -->
     
-    <!-- END ADS SECTION -->
+    <!-- LOGIN SECTION -->
     <section class="login-wrapper">
-        <div class="header">
-            <div class="header__label">Login your Account</div>
-            <div class="header__signup">New member? <a href="javascript:" class="text-link">SIGN UP</a> here.</div>
+        <div class="content-header">
+            <div class="content-header__label">Login your Account</div>
+            <div class="content-header__signup">New member? <a href="/register" class="text-link">SIGN UP</a> here.</div>
         </div>
-        <div class="content">
+        <div class="content-body">
             <form action="">
                 <div class="form-wrapper">
                     <div class="form-group">
@@ -24,10 +24,10 @@
                         <input class="z-input" id="number-email" type="text" placeholder="Please enter your phone number or email">
                     </div>
                     <div class="form-group">
-                        <label class="text-black" for="number-email">Password</label>
-                        <input class="z-input" id="number-email" type="password" placeholder="Minimum 6 characters with a number and a letter">
+                        <label class="text-black" for="password">Password</label>
+                        <input class="z-input" id="password" type="password" placeholder="Minimum 6 characters with a number and a letter">
                         <div class="w-100 text-center mt-2">
-                            <a href="javascript:" class="text-link">Forgot Password?</a>
+                            <a href="javascript:" class="text-link italic">Forgot Password?</a>
                         </div>
                     </div>
                 </div>
@@ -56,4 +56,5 @@
             </div>
         </div>
     </section>
+    <!-- END LOGIN SECTION -->
 @endsection

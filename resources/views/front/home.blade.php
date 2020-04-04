@@ -3,6 +3,7 @@
     <!-- HERO SECTION -->
     <section class="hero-section">
         <div class="categories">
+            <!-- TODO: SUB CATEGORIES -->
             <div class="categories__label">Categories</div>
             <ul class="categories__items" id="custom-scroll">
                 <li class="categories__item">
