@@ -248,6 +248,13 @@
     }
 }
 
+.most-popular {
+    .z-btn-filled {
+        min-width: 250px;
+        min-height: 40px;
+    }
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

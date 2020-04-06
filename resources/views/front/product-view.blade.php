@@ -82,6 +82,36 @@
                     <span class="price-prev">₱ 42,000 </span>&nbsp;<span class="price-discount"> - 60% off</span>
                 </div>
             </div>
+
+            <div class="actions">
+                <div class="grid-column-2">
+                    <select class="z-input" name="" id="">
+                        <option value="">Color Variant</option>
+                        <option value="">Black</option>
+                    </select>
+                    <select class="z-input" name="" id="">
+                        <option value="">Size</option>
+                        <option value="">Small</option>
+                        <option value="">Medium</option>
+                        <option value="">Large</option>
+                    </select>
+                </div>
+                <div class="grid-column-2 mt-3">
+                    <div class="counter">
+                        <button>
+                            <i class="mdi mdi-minus"></i>
+                        </button>
+                        <input type="number" value="1">
+                        <button>
+                            <i class="mdi mdi-plus"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="grid-column-2 mt-3">
+                    <button class="z-btn-outline py-2 w-100">Add to Cart</button>
+                    <button class="z-btn-filled py-2 w-100">Buy Now</button>
+                </div>
+            </div>
         </div>
     </div>
     <div class="product-shipping">
