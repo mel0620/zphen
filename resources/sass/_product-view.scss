@@ -63,13 +63,18 @@
         &-info {
             overflow: hidden;
 
-            .product-name, .product-desc {
+            .product-name {
                 white-space: nowrap;
                 text-overflow: ellipsis;
                 font-size: 24px;
                 overflow: hidden;
                 line-height: 26px;
                 color: $black;
+            }
+
+            .product-desc {
+                @extend .product-name;
+                white-space: normal;
             }
 
             .rating-share {
@@ -222,5 +227,135 @@
                 }
             }
         }
+    }
+}
+
+.product-others-info {
+    display: grid;
+    grid-template-columns: 79% 20%;
+    grid-gap: 1%;
+    margin-top: 10px;
+
+    .product-view-sections {
+
+        .section-header {
+            background-color: $brand-light;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 32px;
+
+            &__title{
+                font-size: 18px;
+                color: $black;
+            }
+        }
+
+        .section-body {
+            background-color: #fff;
+            min-height: 200px;
+            padding: 16px 32px 32px;
+        }
+
+        .product-view-section {
+            margin-bottom: 10px;
+        }
+
+        .product-details {
+            .section-body {
+                p {
+                    color: $black;
+                    line-height: 18px;
+                    border-bottom: 1px solid #d1d1d1;
+                    padding-bottom: 16px;
+                    margin-bottom: 16px;
+                }
+    
+                .image-container {
+                    background-color: #f6f6f6;
+                    min-height: 400px;
+
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+
+        .product-review {
+            .review-wrapper {
+                .review-item {
+                    border-bottom: 1px solid #d1d1d1;
+                    margin-bottom: 16px;
+
+                    &:last-child {
+                        border-bottom: 0;
+                    }
+
+                    &__header {
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: space-between;
+
+                        .left {
+                            .reviewer {
+                                color: $black;
+                            }
+                        }
+
+                        .right {
+                            color: $black;
+                        }
+                    }
+
+                    &__body {
+                        p {
+                            color: $black;
+                            line-height: 18px;
+                            margin-top: 8px;
+                        }
+
+                        .media-wrapper {
+                            display: grid;
+                            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+                            grid-gap: 10px;
+                            padding-bottom: 16px;
+                            
+                            .media {
+                                width: 100px;
+                                height: 100px;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .ads {
+        &__item {
+            background-color: #fff;
+            min-height: 400px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.may-also-like {
+    .rating-holder {
+        margin-top: 8px;
+        display: flex;
+    }
+    .z-btn-filled {
+        min-width: 250px;
+        min-height: 40px;
     }
 }

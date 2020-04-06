@@ -161,3 +161,15 @@ $rating-icons-paths: (
 
     @return $target / $context + 0em;
 }
+
+.c-rating {
+    @include c-rating(toem(38px), button, representative);
+
+    &--small {
+        font-size: 50%;
+    }
+
+    &--big {
+        font-size: 150%;
+    }
+}

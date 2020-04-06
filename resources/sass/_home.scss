@@ -234,18 +234,6 @@
         margin-top: 8px;
         display: flex;
     }
-
-    .c-rating {
-        @include c-rating(toem(38px), button, representative);
-
-        &--small {
-            font-size: 50%;
-        }
-
-        &--big {
-            font-size: 150%;
-        }
-    }
 }
 
 .most-popular {
