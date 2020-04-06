@@ -13,8 +13,14 @@
         {{-- MDI font --}}
         <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.0.45/css/materialdesignicons.min.css">
 
+        {{-- FONTAWESOME --}}
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
         <!-- Styles -->
         <link rel="stylesheet" href="css/app.css">
+        
+        {{-- swiper --}}
+        <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 
         @yield('style')
     </head>
@@ -238,7 +244,7 @@
             </div>
         </footer>
 
+        <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
         @yield('script')
-
     </body>
 </html>

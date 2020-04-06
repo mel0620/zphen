@@ -17,4 +17,8 @@ class MainController extends Controller
     public function register() {
         return view('front.register');
     }
+    
+    public function productView() {
+        return view('front.product-view');
+    }
 }

@@ -158,9 +158,9 @@
             @for ($i = 0; $i < 5; $i++)
                 <div class="product-item">
                     <div class="product-item__top">
-                        <div class="product-item__image">
+                        <a href="/product-view" class="product-item__image">
                             <img src="https://static.bhphoto.com/images/images500x500/1484050840_1308819.jpg" alt="">
-                        </div>
+                        </a>
                     </div>
                     <div class="product-item__bottom">
                         <div class="product-item__info">
@@ -169,11 +169,20 @@
                         </div>
                         <div class="product-item__order">
                             <div class="product-item__price">
-                                <div class="product-item__current">₱ 24,000.00</div>
-                                <div class="product-item__prev">₱ 42,000.00</div>
+                                <div class="product-item__current">₱ 24,000</div>
+                                <div class="product-item__prev">₱ 42,000</div>
                             </div>
                             <div class="product-item__action">
                                 <button class="z-btn-outline">Add to cart</button>
+                                <div class="rating-holder d-flex justify-content-end">
+                                    <div class="c-rating c-rating--small" data-rating-value="3.5">
+                                        <button>1</button>
+                                        <button>2</button>
+                                        <button>3</button>
+                                        <button>4</button>
+                                        <button>5</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -193,9 +202,9 @@
             @for ($i = 0; $i < 5; $i++)
                 <div class="product-item">
                     <div class="product-item__top">
-                        <div class="product-item__image">
+                        <a href="/product-view" class="product-item__image">
                             <img src="https://static.bhphoto.com/images/images500x500/1484050840_1308819.jpg" alt="">
-                        </div>
+                        </a>
                     </div>
                     <div class="product-item__bottom">
                         <div class="product-item__info">
@@ -204,11 +213,20 @@
                         </div>
                         <div class="product-item__order">
                             <div class="product-item__price">
-                                <div class="product-item__current">₱ 24,000.00</div>
-                                <div class="product-item__prev">₱ 42,000.00</div>
+                                <div class="product-item__current">₱ 24,000</div>
+                                <div class="product-item__prev">₱ 42,000</div>
                             </div>
                             <div class="product-item__action">
                                 <button class="z-btn-outline">Add to cart</button>
+                                <div class="rating-holder d-flex justify-content-end">
+                                    <div class="c-rating c-rating--small" data-rating-value="3.5">
+                                        <button>1</button>
+                                        <button>2</button>
+                                        <button>3</button>
+                                        <button>4</button>
+                                        <button>5</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -237,12 +255,7 @@
 
 @endsection
 
-@section('style')
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-@endsection
-
 @section('script')
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {
         pagination: {

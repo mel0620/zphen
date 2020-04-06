@@ -1,11 +1,19 @@
+@import "./custom-components/checkbox";
+@import "./custom-components/rating";
+@import "./custom-components/scroll";
+
 .unstyled {
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
 
+.fw-regular {
+    font-weight: 400;
+}
+
 .text-link {
-    color: #00B1FF;
+    color: #00b1ff;
     text-decoration: none !important;
 
     &.italic {
@@ -13,194 +21,38 @@
     }
 
     &:hover {
-        color: #00B1FF;
+        color: #00b1ff;
     }
 }
-
-// CUSTOM CHECKBOX
-@supports (-webkit-appearance: none) or (-moz-appearance: none) {
-    input[type="checkbox"],
-    input[type="radio"] {
-        --active: #FF6600;
-        --active-inner: #fff;
-        // --focus: 2px rgba(39, 94, 254, 0.3);
-        --focus: 2px #FF6600;
-        --border: #FFB317;
-        --border-hover: #FF6600;
-        --background: #FFFAEF;
-        --disabled: #f6f8ff;
-        --disabled-inner: #e1e6f9;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        height: 18px;
-        outline: none;
-        display: inline-block;
-        vertical-align: top;
-        position: relative;
-        margin: 0;
-        cursor: pointer;
-        border: 1px solid var(--bc, var(--border));
-        background: var(--b, var(--background));
-        transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
-        &:after {
-            content: "";
-            display: block;
-            left: 0;
-            top: 0;
-            position: absolute;
-            transition: transform var(--d-t, 0.3s) var(--d-t-e, ease),
-                opacity var(--d-o, 0.2s);
-        }
-        &:checked {
-            --b: var(--active);
-            --bc: var(--active);
-            --d-o: 0.3s;
-            --d-t: 0.6s;
-            --d-t-e: cubic-bezier(0.2, 0.85, 0.32, 1.2);
-        }
-        &:disabled {
-            --b: var(--disabled);
-            cursor: not-allowed;
-            opacity: 0.9;
-            &:checked {
-                --b: var(--disabled-inner);
-                --bc: var(--border);
-            }
-            & + label {
-                cursor: not-allowed;
-            }
-        }
-        &:hover {
-            &:not(:checked) {
-                &:not(:disabled) {
-                    --bc: var(--border-hover);
-                }
-            }
-        }
-        &:focus {
-            box-shadow: 0 0 0 var(--focus);
-        }
-        &:not(.switch) {
-            width: 18px;
-            &:after {
-                opacity: var(--o, 0);
-            }
-            &:checked {
-                --o: 1;
-            }
-        }
-        & + label {
-            font-size: 14px;
-            line-height: 18px;
-            display: inline-block;
-            vertical-align: top;
-            cursor: pointer;
-            margin-left: 4px;
-        }
-    }
-    input[type="checkbox"] {
-        &:not(.switch) {
-            border-radius: 0px;
-            &:after {
-                width: 5px;
-                height: 9px;
-                border: 2px solid var(--active-inner);
-                border-top: 0;
-                border-left: 0;
-                left: 6px;
-                top: 2px;
-                transform: rotate(var(--r, 20deg));
-            }
-            &:checked {
-                --r: 43deg;
-            }
-        }
-        &.switch {
-            width: 38px;
-            border-radius: 11px;
-            &:after {
-                left: 2px;
-                top: 2px;
-                border-radius: 50%;
-                width: 15px;
-                height: 15px;
-                background: var(--ab, var(--border));
-                transform: translateX(var(--x, 0));
-            }
-            &:checked {
-                --ab: var(--active-inner);
-                --x: 17px;
-            }
-            &:disabled {
-                &:not(:checked) {
-                    &:after {
-                        opacity: 0.6;
-                    }
-                }
-            }
-        }
-    }
-    input[type="radio"] {
-        border-radius: 50%;
-        &:after {
-            width: 19px;
-            height: 19px;
-            border-radius: 50%;
-            background: var(--active-inner);
-            opacity: 0;
-            transform: scale(var(--s, 0.7));
-        }
-        &:checked {
-            --s: 0.5;
-        }
-    }
-}
-// END CUSTOM CHECKBOX
-
-// CUSTOM SCROLL
-#custom-scroll::-webkit-scrollbar-track {
-    // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    background-color: #fff;
-}
-
-#custom-scroll::-webkit-scrollbar {
-    width: 5px;
-    // background-color: #F5F5F5;
-}
-
-#custom-scroll::-webkit-scrollbar-thumb {
-    background-color: $brand;
-    // border: 2px solid #555555;
-}
-// END CUSTOM SCROLL
 
 // CUSTOM BUTTON
 .z-btn-filled {
     border: 1px solid $brand;
     background-color: $brand;
     outline: none !important;
-    transition: .2s box-shadow ease-in-out;
+    transition: 0.2s box-shadow ease-in-out;
     color: #fff;
     font-weight: 400;
     min-width: 250px;
     min-height: 40px;
 
     &:focus {
-        box-shadow: 0 0 0 2px rgba($brand, .2);
+        box-shadow: 0 0 0 2px rgba($brand, 0.2);
     }
 }
+
 .z-btn-outline {
     border: 1px solid $brand;
     background-color: $brand-light;
     outline: none !important;
-    transition: .2s box-shadow ease-in-out;
+    transition: 0.2s box-shadow ease-in-out;
     color: $brand;
     font-weight: 500;
 
     &:focus {
-        box-shadow: 0 0 0 2px rgba($brand, .2);
+        box-shadow: 0 0 0 2px rgba($brand, 0.2);
     }
-} 
+}
 // END CUSTOM BUTTON
 
 // CUSTOM INPUT
@@ -208,7 +60,7 @@
     background-color: $brand-light;
     border: 1px solid $brand;
     outline: none !important;
-    transition: .2s box-shadow ease-in-out;
+    transition: 0.2s box-shadow ease-in-out;
     display: block;
     width: 100%;
     height: calc(1.6em + 0.75rem + 2px);
@@ -222,7 +74,7 @@
     border-radius: 0;
 
     :focus {
-        box-shadow: 0 0 0 2px rgba($brand, .2) !important;
+        box-shadow: 0 0 0 2px rgba($brand, 0.2) !important;
         // box-shadow: 0 0 0 0.2rem rgba(52, 144, 220, 0.25);
     }
 }
@@ -246,6 +98,7 @@
                 max-width: 250px;
                 max-height: 250px;
                 padding: 5px;
+                text-decoration: none;
 
                 img {
                     max-width: 100%;
@@ -261,8 +114,9 @@
             .product-item__info {
                 line-height: 16px;
                 overflow: hidden;
-                
-                .product-item__name, .product-item__desc {
+
+                .product-item__name,
+                .product-item__desc {
                     overflow: hidden;
                     text-overflow: ellipsis;
                     white-space: nowrap;
@@ -284,7 +138,7 @@
                     }
                     .product-item__prev {
                         color: $black;
-                        opacity: .4;
+                        opacity: 0.4;
                         font-size: 12px;
                         text-decoration: line-through;
                     }
@@ -292,6 +146,11 @@
 
                 .product-item__action {
                     justify-self: flex-end;
+
+                    button {
+                        display: flex;
+                        margin-left: auto;
+                    }
                 }
             }
         }

@@ -229,6 +229,23 @@
 .feature-products, .most-popular {
     margin-top: 32px;
     overflow: hidden;
+
+    .rating-holder {
+        margin-top: 8px;
+        display: flex;
+    }
+
+    .c-rating {
+        @include c-rating(toem(38px), button, representative);
+
+        &--small {
+            font-size: 50%;
+        }
+
+        &--big {
+            font-size: 150%;
+        }
+    }
 }
 
 .grid {
