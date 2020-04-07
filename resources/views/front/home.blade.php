@@ -219,7 +219,7 @@
                             <div class="product-item__action">
                                 <button class="z-btn-outline">Add to cart</button>
                                 <div class="rating-holder d-flex justify-content-end">
-                                    <div class="c-rating c-rating--small" data-rating-value="3.5">
+                                    <div class="c-rating c-rating--small" data-rating-value="4.5">
                                         <button>1</button>
                                         <button>2</button>
                                         <button>3</button>

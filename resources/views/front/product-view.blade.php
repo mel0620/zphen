@@ -51,10 +51,10 @@
                             <div class="swiper-lazy-preloader"></div>
                         </div>
                     </div>
-                    <!-- Add Arrows -->
-                    <div class="swiper-button-next swiper-button-custom"></div>
-                    <div class="swiper-button-prev swiper-button-custom"></div>
                 </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next swiper-button-custom"></div>
+                <div class="swiper-button-prev swiper-button-custom"></div>
             </div>
             <div class="product-display-info">
                 <div class="product-name">Nikon D5600</div>
@@ -62,7 +62,7 @@
             
                 <div class="rating-share">
                     <div class="rating-holder">
-                        <div class="c-rating c-rating--small" data-rating-value="3.5">
+                        <div class="c-rating c-rating--small" data-rating-value="4.5">
                             <button>1</button>
                             <button>2</button>
                             <button>3</button>
@@ -197,12 +197,115 @@
                     </div>
                 </div>
             </section>
-            <section class="product-view-section">
+            <section class="product-view-section product-rating">
                 <div class="section-header">
                     <div class="section-header__title">Product Rating</div>
                 </div>
                 <div class="section-body">
-                    
+                    <div class="rating-wrapper">
+                        <div class="content">
+                            <div class="value">4.5<span>/5</span></div>
+                            <div class="rating-holder">
+                                <div class="c-rating c-rating--big" data-rating-value="4.5">
+                                    <button>1</button>
+                                    <button>2</button>
+                                    <button>3</button>
+                                    <button>4</button>
+                                    <button>5</button>
+                                </div>
+                            </div>
+                            <div class="text">97 ratings</div>
+                        </div>
+                        <div class="content">
+                            <div class="rating-with-bar-wrapper">
+                                <div class="rating-with-bar">
+                                    <div class="rating-holder">
+                                        <div class="c-rating c-rating--small" data-rating-value="5">
+                                            <button>1</button>
+                                            <button>2</button>
+                                            <button>3</button>
+                                            <button>4</button>
+                                            <button>5</button>
+                                        </div>
+                                    </div>
+                                    <div class="bar-holder">
+                                        <div class="c-bar">
+                                            <div class="c-bar-progress" data-c-progress-value="45"></div>
+                                        </div>
+                                    </div>
+                                    <div class="rating-value">45</div>
+                                </div>
+                                <div class="rating-with-bar">
+                                    <div class="rating-holder">
+                                        <div class="c-rating c-rating--small" data-rating-value="4">
+                                            <button>1</button>
+                                            <button>2</button>
+                                            <button>3</button>
+                                            <button>4</button>
+                                            <button>5</button>
+                                        </div>
+                                    </div>
+                                     <div class="bar-holder">
+                                        <div class="c-bar">
+                                            <div class="c-bar-progress" data-c-progress-value="32"></div>
+                                        </div>
+                                    </div>
+                                    <div class="rating-value">32</div>
+                                </div>
+                                <div class="rating-with-bar">
+                                    <div class="rating-holder">
+                                        <div class="c-rating c-rating--small" data-rating-value="3">
+                                            <button>1</button>
+                                            <button>2</button>
+                                            <button>3</button>
+                                            <button>4</button>
+                                            <button>5</button>
+                                        </div>
+                                    </div>
+                                     <div class="bar-holder">
+                                        <div class="c-bar">
+                                            <div class="c-bar-progress" data-c-progress-value="23"></div>
+                                        </div>
+                                    </div>
+                                    <div class="rating-value">23</div>
+                                </div>
+                                <div class="rating-with-bar">
+                                    <div class="rating-holder">
+                                        <div class="c-rating c-rating--small" data-rating-value="2">
+                                            <button>1</button>
+                                            <button>2</button>
+                                            <button>3</button>
+                                            <button>4</button>
+                                            <button>5</button>
+                                        </div>
+                                    </div>
+                                     <div class="bar-holder">
+                                        <div class="c-bar">
+                                            <div class="c-bar-progress" data-c-progress-value="18"></div>
+                                        </div>
+                                    </div>
+                                    <div class="rating-value">18</div>
+                                </div>
+                                <div class="rating-with-bar">
+                                    <div class="rating-holder">
+                                        <div class="c-rating c-rating--small" data-rating-value="1">
+                                            <button>1</button>
+                                            <button>2</button>
+                                            <button>3</button>
+                                            <button>4</button>
+                                            <button>5</button>
+                                        </div>
+                                    </div>
+                                     <div class="bar-holder">
+                                        <div class="c-bar">
+                                            <div class="c-bar-progress" data-c-progress-value="2"></div>
+                                        </div>
+                                    </div>
+                                    <div class="rating-value">2</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="product-view-section product-review">
@@ -302,7 +405,7 @@
 <script>
     var galleryThumbs = new Swiper('.gallery-thumbs', {
         lazy: true,
-        spaceBetween: 10,
+        spaceBetween: 8,
         slidesPerView: 4,
         // freeMode: true,
         watchSlidesVisibility: true,
