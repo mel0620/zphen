@@ -12,6 +12,42 @@ html, body {
     background-color: #fff;
     z-index: 999;
 
+    .c-container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    @media (min-width: 576px) {
+        .c-container {
+            max-width: 540px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .c-container {
+            max-width: 720px;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .c-container {
+            max-width: 960px;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .c-container {
+            max-width: 1400px;
+        }
+    }
+
+    .hidden {
+        display: none;
+    }
+
     .header-toolbar {
         display: grid;
         grid-template-columns: auto 1fr auto;
@@ -420,11 +456,68 @@ html, body {
             }
         }
     }
+
+    .header-toolbar-bottom {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        padding: 10px 0;
+        
+        .dropdown-categories {
+            .dropdown-category-cta {
+                padding: 4px 10px;
+                color: #fff;
+                min-width: 200px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                cursor: pointer;
+
+                .mdi {
+                    font-size: 1rem;
+                }
+            }
+            .dropdown-category-content {
+
+            }
+        }
+
+        .choose-location-wrapper {
+            justify-self: center;
+
+            .label {
+                white-space: nowrap;
+                margin-right: 8px;
+            }
+            
+            select {
+                width: 25rem;
+                max-height: 1.875rem;
+                font-size: 0.8125rem;
+            }
+        }
+
+        .other-actions {
+            align-self: flex-end;
+
+            a {
+                text-decoration: none;
+                color: $black;
+
+                &:last-child {
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
 }
 
 .main-content {
     padding-top: 4.0625rem;
     padding-bottom: 3.125rem;
+
+    &.pt-adjust {
+        padding-top: 118px;
+    }
 }
 
 footer {

@@ -21,4 +21,8 @@ class MainController extends Controller
     public function productView() {
         return view('front.product-view');
     }
+
+    public function vendor() {
+        return view('front.vendor');
+    }
 }

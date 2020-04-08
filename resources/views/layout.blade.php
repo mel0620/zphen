@@ -25,140 +25,167 @@
         @yield('style')
     </head>
     <body>
-        <header class="main-header container-fluid">
-            <div class="header-toolbar">
-                <div class="header-toolbar__brand">
-                    <a href="/">
-                        <img width="150px" src="assets/brand.svg" alt="">
-                    </a>
-                </div>
-                <div class="header-toolbar__center-actions">
-                    <div class="search">
-                        <input type="text" placeholder="Search in zphen..." class="search__input">
-                        <button class="search__btn">
-                            <span class="mdi mdi-magnify"></span>
-                        </button>
+        <header class="main-header">
+            <div class="c-container">
+                <div class="header-toolbar">
+                    <div class="header-toolbar__brand">
+                        <a href="/">
+                            <img width="150px" src="assets/brand.svg" alt="">
+                        </a>
                     </div>
-                    <div class="actions">
-                        <div class="cart">
-                            <a href="javascript:" class="cart__dropdown">
-                                My Cart <span class="mdi mdi-menu-down"></span>
-                            </a>
-                            <a href="javascript:" class="cart__add">
-                                <span class="mdi mdi-cart"></span>
+                    <div class="header-toolbar__center-actions">
+                        <div class="search">
+                            <input type="text" placeholder="Search in zphen..." class="search__input">
+                            <button class="search__btn">
+                                <span class="mdi mdi-magnify"></span>
+                            </button>
+                        </div>
+                        <div class="actions">
+                            <div class="cart">
+                                <a href="javascript:" class="cart__dropdown">
+                                    My Cart <span class="mdi mdi-menu-down"></span>
+                                </a>
+                                <a href="javascript:" class="cart__add">
+                                    <span class="mdi mdi-cart"></span>
+                                    <div class="round-icon">
+                                        {{-- <span class="value">20</span> --}}
+                                        <span class="mdi mdi-plus"></span>
+                                    </div>
+                                </a>
+                                <div class="cart__dropdown-menu">
+                                    <div class="cart__dropdown-header">
+                                        <ul class="unstyled">
+                                            <li>
+                                                <input id="allitems" type="checkbox" value="value1">
+                                                <label for="allitems">Select All(0) Items</label>
+                                            </li>
+                                        </ul>
+                                        <button class="cart__dropdown-delete">
+                                            <span class="mdi mdi-trash-can-outline"></span>
+                                        </button>
+                                    </div>
+
+                                    {{-- IF NO ITEMS --}}
+
+                                    {{-- <div class="cart__dropdown-content">
+                                        <div class="no-items">No Items</div>
+                                    </div> --}}
+                                    
+                                    {{-- IF HAS ITEMS --}}
+                                    <div class="cart__dropdown-content" id="custom-scroll">
+                                        <div class="product-items">
+                                            @for ($i = 0; $i < 5; $i++)
+                                                <div class="product-item">
+                                                    <div class="product-item__check">
+                                                        <ul class="unstyled">
+                                                            <input id="c2" type="checkbox">
+                                                        </ul>
+                                                    </div>
+                                                    <div class="product-item__preview">
+                                                        <div class="image-holder">
+                                                            <img src="https://static.bhphoto.com/images/images500x500/1484050840_1308819.jpg" alt="">
+                                                        </div>
+                                                        <div class="prod-info">
+                                                            <div class="prod-info__top">
+                                                                <div class="prod-name">Nikon D5600</div>
+                                                                <div class="prod-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, nulla.</div>
+                                                            </div>
+                                                            <div class="prod-info__bottom">
+                                                                <div class="price">
+                                                                    <div class="price__current">₱ 5,600.00</div>
+                                                                    <div class="price__prev">₱ 24,000.00</div>
+                                                                </div>
+                                                                <div class="counter">
+                                                                    <button>
+                                                                        <i class="mdi mdi-plus"></i>
+                                                                    </button>
+                                                                    <input type="number" value="1">
+                                                                    <button>
+                                                                        <i class="mdi mdi-minus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            @endfor
+                                        </div>
+                                    </div>
+                                    <div class="cart__dropdown-footer">
+                                        <div class="cart__total">TOTAL: ₱ 28,000.00</div>
+
+                                        {{-- NO ITEMS ON CART --}}
+                                        {{-- <button class="cart__action">ADD ITEMS TO PROCEED</button> --}}
+
+                                        <button class="cart__action">PROCEED TO CHECKOUT</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="notif" href="javascript:">
+                                <span class="mdi mdi-bell"></span>
                                 <div class="round-icon">
-                                    {{-- <span class="value">20</span> --}}
                                     <span class="mdi mdi-plus"></span>
                                 </div>
                             </a>
-                            <div class="cart__dropdown-menu">
-                                <div class="cart__dropdown-header">
-                                    <ul class="unstyled">
-                                        <li>
-                                            <input id="allitems" type="checkbox" value="value1">
-                                            <label for="allitems">Select All(0) Items</label>
-                                        </li>
-                                    </ul>
-                                    <button class="cart__dropdown-delete">
-                                        <span class="mdi mdi-trash-can-outline"></span>
-                                    </button>
-                                </div>
-
-                                {{-- IF NO ITEMS --}}
-
-                                {{-- <div class="cart__dropdown-content">
-                                    <div class="no-items">No Items</div>
-                                </div> --}}
-                                
-                                {{-- IF HAS ITEMS --}}
-                                <div class="cart__dropdown-content" id="custom-scroll">
-                                    <div class="product-items">
-                                        @for ($i = 0; $i < 5; $i++)
-                                            <div class="product-item">
-                                                <div class="product-item__check">
-                                                    <ul class="unstyled">
-                                                        <input id="c2" type="checkbox">
-                                                    </ul>
-                                                </div>
-                                                <div class="product-item__preview">
-                                                    <div class="image-holder">
-                                                        <img src="https://static.bhphoto.com/images/images500x500/1484050840_1308819.jpg" alt="">
-                                                    </div>
-                                                    <div class="prod-info">
-                                                        <div class="prod-info__top">
-                                                            <div class="prod-name">Nikon D5600</div>
-                                                            <div class="prod-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, nulla.</div>
-                                                        </div>
-                                                        <div class="prod-info__bottom">
-                                                            <div class="price">
-                                                                <div class="price__current">₱ 5,600.00</div>
-                                                                <div class="price__prev">₱ 24,000.00</div>
-                                                            </div>
-                                                            <div class="counter">
-                                                                <button>
-                                                                    <i class="mdi mdi-plus"></i>
-                                                                </button>
-                                                                <input type="number" value="1">
-                                                                <button>
-                                                                    <i class="mdi mdi-minus"></i>
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        @endfor
-                                    </div>
-                                </div>
-                                <div class="cart__dropdown-footer">
-                                    <div class="cart__total">TOTAL: ₱ 28,000.00</div>
-
-                                    {{-- NO ITEMS ON CART --}}
-                                    {{-- <button class="cart__action">ADD ITEMS TO PROCEED</button> --}}
-
-                                    <button class="cart__action">PROCEED TO CHECKOUT</button>
-                                </div>
-                            </div>
                         </div>
-                        <a class="notif" href="javascript:">
-                            <span class="mdi mdi-bell"></span>
-                            <div class="round-icon">
-                                <span class="mdi mdi-plus"></span>
-                            </div>
+                    </div>
+                    
+                    {{-- VISITOR --}}
+
+                    <div class="header-toolbar__right-actions">
+                        <a href="/register">Sign up</a>
+                        <span class="mx-2 separator">|</span> 
+                        <a href="/login">
+                            <span>Login</span>
+                            <span class="mdi mdi-account-circle"></span>
                         </a>
                     </div>
+
+                    {{-- LOGGED IN --}}
+
+                    {{-- <div class="header-toolbar__is-logged-in">
+                        <div class="user">
+                            <a class="user__dropdown" href="javascript:">John Doe <span class="mdi mdi-account-circle"></span></a>
+                            <div class="user__menu">
+                                <ul>
+                                    <li><a href="javascript:">My Profile</a></li>
+                                    <li><a href="javascript:">My Orders</a></li>
+                                    <li><a href="javascript:">My Reviews</a></li>
+                                    <li><a href="javascript:">Sell Items</a></li>
+                                    <li><a href="javascript:">Logout</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> --}}
                 </div>
-                
-                {{-- VISITOR --}}
+            </div>
+            @if(Request::segment(1) != '')
+                <div class="container">
+                    <div class="header-toolbar-bottom">
+                        <div class="dropdown-categories">
+                            <div class="dropdown-category-cta bg-brand">
+                                <span>CATEGORIES</span>
+                                <i class="mdi mdi-menu-down"></i>
+                            </div>
+                            <div class="dropdown-category-content">
 
-                <div class="header-toolbar__right-actions">
-                    <a href="/register">Sign up</a>
-                    <span class="mx-2 separator">|</span> 
-                    <a href="/login">
-                        <span>Login</span>
-                        <span class="mdi mdi-account-circle"></span>
-                    </a>
-                </div>
-
-                {{-- LOGGED IN --}}
-
-                {{-- <div class="header-toolbar__is-logged-in">
-                    <div class="user">
-                        <a class="user__dropdown" href="javascript:">John Doe <span class="mdi mdi-account-circle"></span></a>
-                        <div class="user__menu">
-                            <ul>
-                                <li><a href="javascript:">My Profile</a></li>
-                                <li><a href="javascript:">My Orders</a></li>
-                                <li><a href="javascript:">My Reviews</a></li>
-                                <li><a href="javascript:">Sell Items</a></li>
-                                <li><a href="javascript:">Logout</a></li>
-                            </ul>
+                            </div>
+                        </div>
+                        <div class="choose-location-wrapper d-flex align-items-center">
+                            <div class="label text-brand">CHOOSE LOCATION:</div>
+                            <select class="z-input" name="" id="">
+                                <option value="">Login to select your shipping address:</option>
+                            </select>
+                        </div>
+                        <div class="other-actions">
+                            <a href="/vendor">Be a Vendor</a>
+                            <a href="/login">Sell used Items</a>
                         </div>
                     </div>
-                </div> --}}
-            </div>
+                </div>
+            @endif
         </header>
-        <main class="main-content container">
+        <main class="main-content container {{ Request::segment(1) == 'product-view' || Request::segment(1) == 'login' || Request::segment(1) == 'register' || Request::segment(1) == 'vendor' ? 'pt-adjust' : '' }}">
             @yield("content")
         </main>
         <footer class="footer">

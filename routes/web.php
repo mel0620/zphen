@@ -21,3 +21,4 @@ Route::get('/', 'MainController@index');
 Route::get('/login', 'MainController@login');
 Route::get('/register', 'MainController@register');
 Route::get('/product-view', 'MainController@productView');
+Route::get('/vendor', 'MainController@vendor');

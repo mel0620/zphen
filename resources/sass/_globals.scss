@@ -25,6 +25,14 @@
     }
 }
 
+.bg-brand {
+    background-color: $brand;
+}
+
+.text-brand {
+    color: $brand;
+}
+
 // CUSTOM BUTTON
 .z-btn-filled {
     border: 1px solid $brand;
@@ -33,9 +41,18 @@
     transition: 0.2s box-shadow ease-in-out;
     color: #fff;
     font-weight: 400;
-
+    
     &:focus {
         box-shadow: 0 0 0 2px rgba($brand, 0.2);
+    }
+    
+    &.z-btn-black {
+        background-color: $black;
+        border-color: $black;
+
+        &:focus {
+            box-shadow: 0 0 0 2px rgba($black, 0.2);
+        }
     }
 }
 
