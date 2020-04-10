@@ -62,13 +62,29 @@
             
                 <div class="rating-share">
                     <div class="rating-holder">
-                        <div class="c-rating c-rating--small" data-rating-value="4.5">
-                            <button>1</button>
-                            <button>2</button>
-                            <button>3</button>
-                            <button>4</button>
-                            <button>5</button>
-                        </div>
+                        <div class="z-star mt-2">
+                            <svg class="star-source" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <defs>
+                                    <g id="icon-star">
+                                    <path d="M20.388,10.918L32,12.118l-8.735,7.749L25.914,31.4l-9.893-6.088L6.127,31.4l2.695-11.533L0,12.118
+                                            l11.547-1.2L16.026,0.6L20.388,10.918z" />
+                                    </g>
+
+                                    <linearGradient id="halfGradient">
+                                        <stop stop-opacity="1" offset="50%" stop-color="#FFB317"></stop>
+                                        <stop stop-opacity="0" offset="50%"></stop>
+                                    </linearGradient>    
+                                </defs>
+                            </svg>
+
+                            <svg class="star" viewBox="-3 -2 220 36">
+                                <use xlink:href="#icon-star" x="0" y="0" />
+                                <use xlink:href="#icon-star" x="45" y="0"  />      
+                                <use xlink:href="#icon-star" x="90" y="0" /> 
+                                <use xlink:href="#icon-star" x="135" y="0" class="star--half" />       
+                                <use xlink:href="#icon-star" x="180" y="0" class="star--empty" />  
+                            </svg>
+                        </div> 
                         <div class="label">97 Ratings / 5 Reviews</div>
                     </div>
                     <a href="javascript:" class="btn-share justify-self-end text-black">
@@ -205,28 +221,56 @@
                     <div class="rating-wrapper">
                         <div class="content">
                             <div class="value">4.5<span>/5</span></div>
-                            <div class="rating-holder">
-                                <div class="c-rating c-rating--big" data-rating-value="4.5">
-                                    <button>1</button>
-                                    <button>2</button>
-                                    <button>3</button>
-                                    <button>4</button>
-                                    <button>5</button>
-                                </div>
+                            <div class="rating-holder z-star d-flex">
+                                <svg class="star-source" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs>
+                                        <g id="icon-star">
+                                        <path d="M20.388,10.918L32,12.118l-8.735,7.749L25.914,31.4l-9.893-6.088L6.127,31.4l2.695-11.533L0,12.118
+                                                l11.547-1.2L16.026,0.6L20.388,10.918z" />
+                                        </g>
+
+                                        <linearGradient id="halfGradient">
+                                            <stop stop-opacity="1" offset="50%" stop-color="#FFB317"></stop>
+                                            <stop stop-opacity="0" offset="50%"></stop>
+                                        </linearGradient>    
+                                    </defs>
+                                </svg>
+
+                                <svg class="star star--big" viewBox="-3 -2 220 36">
+                                    <use xlink:href="#icon-star" x="0" y="0" />
+                                    <use xlink:href="#icon-star" x="45" y="0"  />      
+                                    <use xlink:href="#icon-star" x="90" y="0" /> 
+                                    <use xlink:href="#icon-star" x="135" y="0" class="star--half"/>       
+                                    <use xlink:href="#icon-star" x="180" y="0" class="star--empty"/>  
+                                </svg>
                             </div>
                             <div class="text">97 ratings</div>
                         </div>
                         <div class="content">
                             <div class="rating-with-bar-wrapper">
                                 <div class="rating-with-bar">
-                                    <div class="rating-holder">
-                                        <div class="c-rating c-rating--small" data-rating-value="5">
-                                            <button>1</button>
-                                            <button>2</button>
-                                            <button>3</button>
-                                            <button>4</button>
-                                            <button>5</button>
-                                        </div>
+                                    <div class="rating-holder z-star d-flex">
+                                        <svg class="star-source" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <defs>
+                                                <g id="icon-star">
+                                                <path d="M20.388,10.918L32,12.118l-8.735,7.749L25.914,31.4l-9.893-6.088L6.127,31.4l2.695-11.533L0,12.118
+                                                        l11.547-1.2L16.026,0.6L20.388,10.918z" />
+                                                </g>
+
+                                                <linearGradient id="halfGradient">
+                                                    <stop stop-opacity="1" offset="50%" stop-color="#FFB317"></stop>
+                                                    <stop stop-opacity="0" offset="50%"></stop>
+                                                </linearGradient>    
+                                            </defs>
+                                        </svg>
+
+                                        <svg class="star" viewBox="-3 -2 220 36">
+                                            <use xlink:href="#icon-star" x="0" y="0" />
+                                            <use xlink:href="#icon-star" x="45" y="0"  />      
+                                            <use xlink:href="#icon-star" x="90" y="0" /> 
+                                            <use xlink:href="#icon-star" x="135" y="0" />       
+                                            <use xlink:href="#icon-star" x="180" y="0" />  
+                                        </svg>
                                     </div>
                                     <div class="bar-holder">
                                         <div class="c-bar">
@@ -236,14 +280,28 @@
                                     <div class="rating-value">45</div>
                                 </div>
                                 <div class="rating-with-bar">
-                                    <div class="rating-holder">
-                                        <div class="c-rating c-rating--small" data-rating-value="4">
-                                            <button>1</button>
-                                            <button>2</button>
-                                            <button>3</button>
-                                            <button>4</button>
-                                            <button>5</button>
-                                        </div>
+                                    <div class="rating-holder z-star d-flex">
+                                        <svg class="star-source" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <defs>
+                                                <g id="icon-star">
+                                                <path d="M20.388,10.918L32,12.118l-8.735,7.749L25.914,31.4l-9.893-6.088L6.127,31.4l2.695-11.533L0,12.118
+                                                        l11.547-1.2L16.026,0.6L20.388,10.918z" />
+                                                </g>
+
+                                                <linearGradient id="halfGradient">
+                                                    <stop stop-opacity="1" offset="50%" stop-color="#FFB317"></stop>
+                                                    <stop stop-opacity="0" offset="50%"></stop>
+                                                </linearGradient>    
+                                            </defs>
+                                        </svg>
+
+                                        <svg class="star" viewBox="-3 -2 220 36">
+                                            <use xlink:href="#icon-star" x="0" y="0" />
+                                            <use xlink:href="#icon-star" x="45" y="0"  />      
+                                            <use xlink:href="#icon-star" x="90" y="0" /> 
+                                            <use xlink:href="#icon-star" x="135" y="0" />       
+                                            <use xlink:href="#icon-star" x="180" y="0" class="star--empty"/>  
+                                        </svg>
                                     </div>
                                      <div class="bar-holder">
                                         <div class="c-bar">
@@ -253,14 +311,28 @@
                                     <div class="rating-value">32</div>
                                 </div>
                                 <div class="rating-with-bar">
-                                    <div class="rating-holder">
-                                        <div class="c-rating c-rating--small" data-rating-value="3">
-                                            <button>1</button>
-                                            <button>2</button>
-                                            <button>3</button>
-                                            <button>4</button>
-                                            <button>5</button>
-                                        </div>
+                                    <div class="rating-holder z-star d-flex">
+                                        <svg class="star-source" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <defs>
+                                                <g id="icon-star">
+                                                <path d="M20.388,10.918L32,12.118l-8.735,7.749L25.914,31.4l-9.893-6.088L6.127,31.4l2.695-11.533L0,12.118
+                                                        l11.547-1.2L16.026,0.6L20.388,10.918z" />
+                                                </g>
+
+                                                <linearGradient id="halfGradient">
+                                                    <stop stop-opacity="1" offset="50%" stop-color="#FFB317"></stop>
+                                                    <stop stop-opacity="0" offset="50%"></stop>
+                                                </linearGradient>    
+                                            </defs>
+                                        </svg>
+
+                                        <svg class="star" viewBox="-3 -2 220 36">
+                                            <use xlink:href="#icon-star" x="0" y="0" />
+                                            <use xlink:href="#icon-star" x="45" y="0"  />      
+                                            <use xlink:href="#icon-star" x="90" y="0" /> 
+                                            <use xlink:href="#icon-star" x="135" y="0" class="star--empty"/>       
+                                            <use xlink:href="#icon-star" x="180" y="0" class="star--empty" />  
+                                        </svg>
                                     </div>
                                      <div class="bar-holder">
                                         <div class="c-bar">
@@ -270,14 +342,28 @@
                                     <div class="rating-value">23</div>
                                 </div>
                                 <div class="rating-with-bar">
-                                    <div class="rating-holder">
-                                        <div class="c-rating c-rating--small" data-rating-value="2">
-                                            <button>1</button>
-                                            <button>2</button>
-                                            <button>3</button>
-                                            <button>4</button>
-                                            <button>5</button>
-                                        </div>
+                                    <div class="rating-holder z-star d-flex">
+                                        <svg class="star-source" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <defs>
+                                                <g id="icon-star">
+                                                <path d="M20.388,10.918L32,12.118l-8.735,7.749L25.914,31.4l-9.893-6.088L6.127,31.4l2.695-11.533L0,12.118
+                                                        l11.547-1.2L16.026,0.6L20.388,10.918z" />
+                                                </g>
+
+                                                <linearGradient id="halfGradient">
+                                                    <stop stop-opacity="1" offset="50%" stop-color="#FFB317"></stop>
+                                                    <stop stop-opacity="0" offset="50%"></stop>
+                                                </linearGradient>    
+                                            </defs>
+                                        </svg>
+
+                                        <svg class="star" viewBox="-3 -2 220 36">
+                                            <use xlink:href="#icon-star" x="0" y="0" />
+                                            <use xlink:href="#icon-star" x="45" y="0"  />      
+                                            <use xlink:href="#icon-star" x="90" y="0" class="star--empty"/> 
+                                            <use xlink:href="#icon-star" x="135" y="0" class="star--empty"/>       
+                                            <use xlink:href="#icon-star" x="180" y="0" class="star--empty"/>  
+                                        </svg>
                                     </div>
                                      <div class="bar-holder">
                                         <div class="c-bar">
@@ -287,14 +373,28 @@
                                     <div class="rating-value">18</div>
                                 </div>
                                 <div class="rating-with-bar">
-                                    <div class="rating-holder">
-                                        <div class="c-rating c-rating--small" data-rating-value="1">
-                                            <button>1</button>
-                                            <button>2</button>
-                                            <button>3</button>
-                                            <button>4</button>
-                                            <button>5</button>
-                                        </div>
+                                    <div class="rating-holder z-star d-flex">
+                                        <svg class="star-source" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <defs>
+                                                <g id="icon-star">
+                                                <path d="M20.388,10.918L32,12.118l-8.735,7.749L25.914,31.4l-9.893-6.088L6.127,31.4l2.695-11.533L0,12.118
+                                                        l11.547-1.2L16.026,0.6L20.388,10.918z" />
+                                                </g>
+
+                                                <linearGradient id="halfGradient">
+                                                    <stop stop-opacity="1" offset="50%" stop-color="#FFB317"></stop>
+                                                    <stop stop-opacity="0" offset="50%"></stop>
+                                                </linearGradient>    
+                                            </defs>
+                                        </svg>
+
+                                        <svg class="star" viewBox="-3 -2 220 36">
+                                            <use xlink:href="#icon-star" x="0" y="0" />
+                                            <use xlink:href="#icon-star" x="45" y="0"  class="star--empty"/>      
+                                            <use xlink:href="#icon-star" x="90" y="0" class="star--empty"/> 
+                                            <use xlink:href="#icon-star" x="135" y="0" class="star--empty"/>       
+                                            <use xlink:href="#icon-star" x="180" y="0" class="star--empty"/>  
+                                        </svg>
                                     </div>
                                      <div class="bar-holder">
                                         <div class="c-bar">
@@ -318,14 +418,28 @@
                             <div class="review-item">
                                 <div class="review-item__header">
                                     <div class="left">
-                                        <div class="rating-holder d-flex justify-content-start">
-                                            <div class="c-rating c-rating--small" data-rating-value="3.5">
-                                                <button>1</button>
-                                                <button>2</button>
-                                                <button>3</button>
-                                                <button>4</button>
-                                                <button>5</button>
-                                            </div>
+                                        <div class="z-star d-flex">
+                                            <svg class="star-source" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <defs>
+                                                    <g id="icon-star">
+                                                    <path d="M20.388,10.918L32,12.118l-8.735,7.749L25.914,31.4l-9.893-6.088L6.127,31.4l2.695-11.533L0,12.118
+                                                            l11.547-1.2L16.026,0.6L20.388,10.918z" />
+                                                    </g>
+
+                                                    <linearGradient id="halfGradient">
+                                                        <stop stop-opacity="1" offset="50%" stop-color="#FFB317"></stop>
+                                                        <stop stop-opacity="0" offset="50%"></stop>
+                                                    </linearGradient>    
+                                                </defs>
+                                            </svg>
+
+                                            <svg class="star" viewBox="-3 -2 220 36">
+                                                <use xlink:href="#icon-star" x="0" y="0" />
+                                                <use xlink:href="#icon-star" x="45" y="0"  />      
+                                                <use xlink:href="#icon-star" x="90" y="0" /> 
+                                                <use xlink:href="#icon-star" x="135" y="0" class="star--half" />       
+                                                <use xlink:href="#icon-star" x="180" y="0" class="star--empty" />  
+                                            </svg>
                                         </div>
                                         <div class="reviewer">John Doe</div>
                                     </div>
@@ -380,14 +494,28 @@
                             </div>
                             <div class="product-item__action">
                                 <button class="z-btn-outline">Add to cart</button>
-                                <div class="rating-holder d-flex justify-content-end">
-                                    <div class="c-rating c-rating--small" data-rating-value="3.5">
-                                        <button>1</button>
-                                        <button>2</button>
-                                        <button>3</button>
-                                        <button>4</button>
-                                        <button>5</button>
-                                    </div>
+                                <div class="z-star mt-2 d-flex justify-content-end">
+                                    <svg class="star-source" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <defs>
+                                            <g id="icon-star">
+                                            <path d="M20.388,10.918L32,12.118l-8.735,7.749L25.914,31.4l-9.893-6.088L6.127,31.4l2.695-11.533L0,12.118
+                                                    l11.547-1.2L16.026,0.6L20.388,10.918z" />
+                                            </g>
+
+                                            <linearGradient id="halfGradient">
+                                                <stop stop-opacity="1" offset="50%" stop-color="#FFB317"></stop>
+                                                <stop stop-opacity="0" offset="50%"></stop>
+                                            </linearGradient>    
+                                        </defs>
+                                    </svg>
+
+                                    <svg class="star" viewBox="-3 -2 220 36">
+                                        <use xlink:href="#icon-star" x="0" y="0" />
+                                        <use xlink:href="#icon-star" x="45" y="0"  />      
+                                        <use xlink:href="#icon-star" x="90" y="0" /> 
+                                        <use xlink:href="#icon-star" x="135" y="0" class="star--half" />       
+                                        <use xlink:href="#icon-star" x="180" y="0" class="star--empty" />  
+                                    </svg>
                                 </div>
                             </div>
                         </div>

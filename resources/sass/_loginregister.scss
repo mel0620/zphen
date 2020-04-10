@@ -185,6 +185,14 @@
             border: 1px solid $brand;
             background-color: $brand-light;
 
+            &:first-child {
+                border-right: 0;
+            }
+            
+            &:last-child {
+                border-left: 0;
+            }
+
             &::after {
                 @include transition-mix($delay: 0.05s);
             }

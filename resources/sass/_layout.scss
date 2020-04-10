@@ -40,7 +40,7 @@ html, body {
 
     @media (min-width: 1200px) {
         .c-container {
-            max-width: 1400px;
+            max-width: 1800px;
         }
     }
 
@@ -50,7 +50,7 @@ html, body {
 
     .header-toolbar {
         display: grid;
-        grid-template-columns: auto 1fr auto;
+        grid-template-columns: auto auto auto;
         padding: 0.625rem 0;
         align-items: center;
 
@@ -64,14 +64,14 @@ html, body {
         }
 
         &__center-actions {
-            justify-self: center;
+            justify-self: flex-end;
             display: flex;
             align-items: center;
 
             .search {
                 display: flex;
                 flex-wrap: nowrap;
-                margin-right: 2rem;
+                margin-right: 1.5rem;
 
                 &__input {
                     border-top-left-radius: 0.5rem;
@@ -371,6 +371,7 @@ html, body {
         &__right-actions {
             display: flex;
             align-items: center;
+            justify-self: flex-end;
 
             .separator {
                 color: $text-dark;
@@ -476,6 +477,7 @@ html, body {
                     font-size: 1rem;
                 }
             }
+
             .dropdown-category-content {
 
             }
@@ -502,9 +504,14 @@ html, body {
             a {
                 text-decoration: none;
                 color: $black;
+                transition: .2s color ease-in-out;
 
                 &:last-child {
                     margin-left: 1rem;
+                }
+
+                &:hover {
+                    color: $brand;
                 }
             }
         }
@@ -528,6 +535,11 @@ footer {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
 
+        @media screen and (max-width: 512px) {
+            grid-template-columns: 1fr;
+            grid-gap: 1rem;
+        }
+
         .footer-nav {
 
             &__title {
@@ -540,6 +552,7 @@ footer {
             &__links {
                 list-style-type: none;
                 padding: 0;
+                margin: 0;
 
                 .footer-nav__link {    
                     font-size: 0.875rem;
@@ -579,7 +592,7 @@ footer {
         margin-top: 2rem;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        
+
         .footer-nav--center {
             justify-self: center;
         }
@@ -591,6 +604,18 @@ footer {
             opacity: .8;
             font-size: 0.875rem;
             font-weight: 300;
+        }
+
+        @media screen and (max-width: 512px) {
+            grid-template-columns: 1fr;
+
+            .footer-nav--center {
+                justify-self: flex-start;
+            }
+
+            .copyright {
+                justify-self: flex-start;
+            }
         }
     }
 }

@@ -4,6 +4,10 @@
     grid-template-rows: 21.875rem;
     grid-gap: 0.625rem;
 
+    @media screen and (max-width: 512px) {
+        grid-template-columns: 1fr;
+    }
+
     .categories {
         // min-width: 215px;
         // overflow: hidden;
@@ -75,6 +79,10 @@
                 cursor: pointer;
             }
         }
+
+        @media screen and (max-width: 512px){
+            display: none;
+        }
     }
     
     .product-slider {
@@ -132,6 +140,10 @@
             &__content {
                 background-color: #fff;
                 height: 100%;
+                
+                @media screen and (max-width: 512px){
+                    min-height: 9.375rem;
+                }
             }
 
             &__bottom-action {
@@ -162,6 +174,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 0.625rem;
+
+    @media screen and (max-width: 512px) {
+        grid-template-columns: 1fr;
+    }
 
     .ads {
         min-height: 5rem;
@@ -248,6 +264,10 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0.625rem;
     margin-top: 2rem;
+
+    @media screen and (max-width: 512px) {
+        grid-template-columns: 1fr;
+    }
 
     &__item {
         background-color: #fff;

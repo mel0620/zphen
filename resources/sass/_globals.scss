@@ -1,5 +1,5 @@
 @import "./custom-components/checkbox";
-@import "./custom-components/rating";
+@import "./custom-components/ratingv2";
 @import "./custom-components/scroll";
 
 .unstyled {
@@ -103,6 +103,10 @@
     grid-gap: 0.625rem;
     margin-top: 1rem;
 
+    @media screen and (max-width: 512px) {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
     .product-item {
         background-color: #fff;
 
@@ -166,6 +170,15 @@
                     button {
                         display: flex;
                         margin-left: auto;
+                    }
+                }
+
+                @media screen and (max-width: 512px) {
+                    grid-template-columns: 1fr;
+
+                    .product-item__action {
+                        justify-self: flex-start;
+                        margin-top: 0.625rem;
                     }
                 }
             }

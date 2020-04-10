@@ -1,0 +1,43 @@
+.z-star {
+    .star {
+        fill: $brand;
+        stroke: $brand;
+        stroke-width: 2;
+    }
+
+    /* Half-filled star using gradient 
+    --------------------------------
+    (CSS gradient does not work here)
+    */
+
+    .star--half {
+        fill: url(#halfGradient);
+    }
+
+    .star--empty {
+        fill: none;
+    }
+
+    /* Not so important styles: */
+
+    .star {
+        height: 0.9063rem;
+    }
+    
+    .star--big {
+        height: 2rem;
+    }
+
+    .star-source {
+        position: absolute;
+        width: 0;
+        top: 0;
+    }
+
+    /* IE11 */
+
+    svg {
+        display: inline-block;
+        vertical-align: top;
+    }
+}

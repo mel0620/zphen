@@ -99,17 +99,17 @@
                     display: flex;
                     align-items: center;
 
-                    .c-rating {
-                        @include c-rating(toem(38px), button, representative);
+                    // .c-rating {
+                    //     @include c-rating(toem(38px), button, representative);
         
-                        &--small {
-                            font-size: 50%;
-                        }
+                    //     &--small {
+                    //         font-size: 50%;
+                    //     }
         
-                        &--big {
-                            font-size: 150%;
-                        }
-                    }
+                    //     &--big {
+                    //         font-size: 150%;
+                    //     }
+                    // }
 
                     .label {
                         color: $black;

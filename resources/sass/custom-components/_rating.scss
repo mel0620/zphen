@@ -4,8 +4,6 @@
 // @author Damián Muti
 //
 
-@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400");
-
 //
 $rating-min-value: 0 !default;
 //
@@ -27,7 +25,9 @@ $rating-icons-paths: (
     three-quarters:
         "M321.616 190.496l-0.656-0.096-62.384-126.4-62.384 126.4-139.504 20.272 100.944 98.384-23.84 138.928 124.768-65.6 63.024 33.136z",
     full:
-        "M457.888 210.672l-139.504-20.272-62.384-126.4-62.384 126.4-139.504 20.272 100.944 98.384-23.84 138.928 124.768-65.6 124.768 65.6-23.84-138.928c0 0 100.944-98.384 100.944-98.384z",
+        "M396.8,470.9l-140.8-74l-140.8,74l26.9-156.7l-113.9-111l157.3-22.8L256,37.9l70.4,142.6l157.3,22.8l-113.9,111
+		L396.8,470.9z M256,379.9l120.8,63.6L353.7,309l97.7-95.2l-135.1-19.6L256,71.7l-60.4,122.4L60.5,213.7l97.7,95.2l-23.1,134.5
+		L256,379.9z",
 );
 
 // Creates a dynamic list of values that increment each .25 from 0 to 5
@@ -173,3 +173,13 @@ $rating-icons-paths: (
         font-size: 100%;
     }
 }
+
+// <div class="rating-holder d-flex justify-content-end">
+//     <div class="c-rating c-rating--small" data-rating-value="4.5">
+//         <button>1</button>
+//         <button>2</button>
+//         <button>3</button>
+//         <button>4</button>
+//         <button>5</button>
+//     </div>
+// </div>

@@ -250,19 +250,19 @@
                 <div class="footer__bottom">
                     <div class="footer-nav">
                         <div class="footer-nav__title">Payment Methods</div>
-                        <img  src="assets/payment-methods.png" alt="">
+                        <img class="img-fluid"  src="assets/payment-methods.png" alt="">
                     </div>
                     <div class="footer-nav footer-nav--center">
                         <div class="footer-nav__title">Payment Methods</div>
                         <div class="social">
                             <a href="javascript:">
-                                <img src="assets/phil.png" alt="">
+                                <img class="img-fluid" src="assets/phil.png" alt="">
                             </a>
                             <a href="javascript:">
-                                <img src="assets/sing.png" alt="">
+                                <img class="img-fluid" src="assets/sing.png" alt="">
                             </a>
                             <a href="javascript:">
-                                <img src="assets/kor.png" alt="">
+                                <img class="img-fluid" src="assets/kor.png" alt="">
                             </a>
                         </div>
                     </div>
