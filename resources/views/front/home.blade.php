@@ -93,10 +93,10 @@
             <!-- Swiper -->
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">Slide 1</div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide" style="background-image: url('https://image.freepik.com/free-vector/cosmetic-spray-bottle-banner-beauty-product_33099-2072.jpg')"></div>
+                    <div class="swiper-slide" style="background-image: url('https://img.freepik.com/free-vector/sale-banner-with-product-description_1361-1333.jpg?size=626&ext=jpg')"></div>
+                    <div class="swiper-slide" style="background-image: url('https://avartanslider.com/wp-content/uploads/2016/01/product-slider.png')"></div>
+                    <div class="swiper-slide" style="background-image: url('https://i.pinimg.com/originals/03/11/62/0311622466bc4c9406c411cc8417888d.jpg')"></div>
                 </div>
                 <!-- Add Pagination -->
                 <div class="swiper-pagination"></div>
@@ -108,7 +108,7 @@
 
                 </div>
                 <div class="card-item__bottom-action">
-                    <button>Be a vendor</button>
+                    <a href="/vendor">Be a vendor</a>
                 </div>
             </div>
             <div class="card-item">
@@ -116,7 +116,7 @@
 
                 </div>
                 <div class="card-item__bottom-action">
-                    <button>Sell Used Items</button>
+                    <a href="javascript:">Sell Used Items</a>
                 </div>
             </div>
             <div class="card-item">
@@ -124,7 +124,7 @@
 
                 </div>
                 <div class="card-item__bottom-action">
-                    <button>Shop now</button>
+                    <a href="javascript:">Shop now</a>
                 </div>
             </div>
         </div>
@@ -133,11 +133,12 @@
 
     <!-- ADS SECTION -->
     <section class="ads-section">
-        @for ($i = 0; $i < 2; $i++)
-        <div class="ads">
-            <span>zphen ads</span>
-        </div>
-        @endfor
+        <a href="javascript:" class="ads" style="background-image: url('https://onlinecreative.org/wp-content/plugins/pushdownbanner/images/image-example.jpg')">
+            {{-- <span>zphen ads</span> --}}
+        </a>
+        <a href="javascript:" class="ads" style="background-image: url('https://ghc.anitab.org/wp-content/uploads/sites/2/2017/08/example-banner-announcement-1.png')">
+            {{-- <span>zphen ads</span> --}}
+        </a>
     </section>
     <!-- END ADS SECTION -->
 
@@ -286,6 +287,7 @@
 @section('script')
     <script>
         var swiper = new Swiper('.swiper-container', {
+        autoplay: true,
         pagination: {
             el: '.swiper-pagination',
         },

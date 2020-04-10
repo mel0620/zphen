@@ -1,12 +1,13 @@
 @extends("layout")
 @section('content')
     <!-- ADS SECTION -->
-    <section class="ads-section mt-0">
-        @for ($i = 0; $i < 2; $i++)
-        <div class="ads">
-            <span>zphen ads</span>
-        </div>
-        @endfor
+    <section class="ads-section">
+        <a href="javascript:" class="ads" style="background-image: url('https://onlinecreative.org/wp-content/plugins/pushdownbanner/images/image-example.jpg')">
+            {{-- <span>zphen ads</span> --}}
+        </a>
+        <a href="javascript:" class="ads" style="background-image: url('https://ghc.anitab.org/wp-content/uploads/sites/2/2017/08/example-banner-announcement-1.png')">
+            {{-- <span>zphen ads</span> --}}
+        </a>
     </section>
     <!-- END ADS SECTION -->
     

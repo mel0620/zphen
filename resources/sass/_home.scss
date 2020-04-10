@@ -1,8 +1,9 @@
 .hero-section {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 21.875rem;
+    grid-template-rows: 22.8125rem;
     grid-gap: 0.625rem;
+    margin-bottom: 0.625rem;
 
     @media screen and (max-width: 512px) {
         grid-template-columns: 1fr;
@@ -111,6 +112,9 @@
                 -webkit-align-items: center;
                 align-items: center;
                 color: $text-dark;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: top center;
             }
         }
 
@@ -148,8 +152,9 @@
 
             &__bottom-action {
                 text-align: center;
+                display: flex;
                 
-                button {
+                a {
                     border: none;
                     text-decoration: none;
                     color: #fff;
@@ -170,9 +175,10 @@
 }
 
 .ads-section {
-    margin-top: 0.625rem;
+    // margin-top: 0.625rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 5.625rem;
     grid-gap: 0.625rem;
 
     @media screen and (max-width: 512px) {
@@ -186,6 +192,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
 
         span {
             color: $text-dark;
