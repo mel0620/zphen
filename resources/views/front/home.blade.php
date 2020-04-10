@@ -175,7 +175,7 @@
                             </div>
                             <div class="product-item__action">
                                 <button class="z-btn-outline">Add to cart</button>
-                                <div class="z-star mt-2 d-flex justify-content-end">
+                                <div class="z-star mt-2 d-flex">
                                     <svg class="star-source" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <defs>
                                             <g id="icon-star">
@@ -233,7 +233,7 @@
                             </div>
                             <div class="product-item__action">
                                 <button class="z-btn-outline">Add to cart</button>
-                                <div class="z-star mt-2 d-flex justify-content-end">
+                                <div class="z-star mt-2 d-flex">
                                     <svg class="star-source" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <defs>
                                             <g id="icon-star">

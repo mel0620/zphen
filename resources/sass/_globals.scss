@@ -1,110 +1,25 @@
-@import "./custom-components/checkbox";
-@import "./custom-components/ratingv2";
-@import "./custom-components/scroll";
-
-.unstyled {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-.fw-regular {
-    font-weight: 400;
-}
-
-.text-link {
-    color: #00b1ff;
-    text-decoration: none !important;
-
-    &.italic {
-        font-style: italic;
+@function toem($target, $context: 15px) {
+    @if $target == 0 {
+        @return 0;
     }
 
-    &:hover {
-        color: #00b1ff;
-    }
+    @return $target / $context + 0em;
 }
 
-.bg-brand {
-    background-color: $brand;
-}
-
-.text-brand {
-    color: $brand;
-}
-
-// CUSTOM BUTTON
-.z-btn-filled {
-    border: 1px solid $brand;
-    background-color: $brand;
-    outline: none !important;
-    transition: 0.2s box-shadow ease-in-out;
-    color: #fff;
-    font-weight: 400;
-    
-    &:focus {
-        box-shadow: 0 0 0 2px rgba($brand, 0.2);
-    }
-    
-    &.z-btn-black {
-        background-color: $black;
-        border-color: $black;
-
-        &:focus {
-            box-shadow: 0 0 0 2px rgba($black, 0.2);
-        }
-    }
-}
-
-.z-btn-outline {
-    border: 1px solid $brand;
-    background-color: $brand-light;
-    outline: none !important;
-    transition: 0.2s box-shadow ease-in-out;
-    color: $brand;
-    font-weight: 500;
-
-    &:focus {
-        box-shadow: 0 0 0 2px rgba($brand, 0.2);
-    }
-}
-// END CUSTOM BUTTON
-
-// CUSTOM INPUT
-.z-input {
-    background-color: $brand-light;
-    border: 1px solid $brand;
-    outline: none !important;
-    transition: 0.2s box-shadow ease-in-out;
-    display: block;
-    width: 100%;
-    height: calc(1.6em + 0.75rem + 2px);
-    padding: 0.375rem 0.75rem;
-    font-size: 0.9rem;
-    font-weight: 400;
-    line-height: 1.6;
-    color: #495057;
-    background-color: $brand-light;
-    background-clip: padding-box;
-    border-radius: 0;
-
-    :focus {
-        box-shadow: 0 0 0 2px rgba($brand, 0.2) !important;
-        // box-shadow: 0 0 0 0.2rem rgba(52, 144, 220, 0.25);
-    }
-}
-// END CUSTOM INPUT
+@import "./helpers/helpers";
+@import "./custom-components/components";
 
 // PRODUCT
 .product-wrapper {
     display: grid;
-    grid-template-columns: repeat(5, auto);
+    grid-template-columns: repeat(5, 19.17%);
     // grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-gap: 0.625rem;
+    grid-gap: 1%;
     margin-top: 1rem;
 
-    @media screen and (max-width: 512px) {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    @media screen and (max-width: 800px) {
+        font-size: 12px;
+        // grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
 
     .product-item {
@@ -114,8 +29,8 @@
             border-bottom: 2px solid $body-bg;
 
             .product-item__image {
-                max-width: 15.625rem;
-                max-height: 15.625rem;
+                // min-width: 250px;
+                // min-height: 250px;
                 // padding: 5px;
                 text-decoration: none;
 
@@ -129,10 +44,10 @@
         }
 
         &__bottom {
-            padding: 0.625rem;
+            padding: toem(10px);
 
             .product-item__info {
-                line-height: 1rem;
+                line-height: toem(16px);
                 overflow: hidden;
 
                 .product-item__name,
@@ -154,12 +69,12 @@
                     // line-height: 16px;
                     .product-item__current {
                         color: $brand-strong;
-                        font-size: 1.125rem;
+                        font-size: toem(18px);
                     }
                     .product-item__prev {
                         color: $black;
                         opacity: 0.4;
-                        font-size: 0.75rem;
+                        font-size: toem(12px);
                         text-decoration: line-through;
                     }
                 }
@@ -169,16 +84,30 @@
 
                     button {
                         display: flex;
+                        justify-content: center;
                         margin-left: auto;
+                    }
+
+                    .z-star {
+                        justify-content: flex-end;
                     }
                 }
 
-                @media screen and (max-width: 512px) {
+                @media screen and (max-width: 800px) {
                     grid-template-columns: 1fr;
 
                     .product-item__action {
-                        justify-self: flex-start;
+                        // justify-self: flex-start;
                         margin-top: 0.625rem;
+                        width: 100%;
+
+                        button {
+                            width: 100%;
+                        }
+
+                        .z-star {
+                            justify-content: flex-start;
+                        }
                     }
                 }
             }

@@ -164,6 +164,7 @@
                     width: 100%;
                     outline: none;
                     transition: .3s box-shadow ease-in-out;
+                    font-size: toem(15px);
 
                     &:focus {
                         box-shadow: 0 0 0 2px rgba($brand, .5);

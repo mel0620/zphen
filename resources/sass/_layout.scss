@@ -3,6 +3,24 @@ html, body {
     position: relative;
 }
 
+@include media-breakpoint-up(sm) {
+    html {
+        font-size: 0.625rem;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    html {
+        font-size: 0.75rem;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    html {
+        font-size: 0.9375rem;
+    }
+}
+
 .main-header {
     position: fixed;
     top: 0;
